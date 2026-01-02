@@ -1,0 +1,753 @@
+[gd_scene load_steps=68 format=3 uid="uid://cf5wjxwqayt62"]
+
+[ext_resource type="Script" uid="uid://d3x3shqg2b24i" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/midi/s2w_node_midi.gd" id="1_2moes"]
+[ext_resource type="Script" uid="uid://xymoyasai31d" path="res://addons/2026_01_02_gdp_playto/play_to/play_hollow_knight_silksong/script/check_input_silksong.gd" id="2_hov8q"]
+[ext_resource type="Resource" uid="uid://3i42bqxk0ot" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_179_play.tres" id="2_wymyd"]
+[ext_resource type="Resource" uid="uid://dxnsu784d0js7" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_178_stop.tres" id="3_aa38j"]
+[ext_resource type="Script" uid="uid://d00un6ohbnk1w" path="res://addons/2025_11_11_gdp_wow_int/script/wow_input_to_integer.gd" id="3_rcwcq"]
+[ext_resource type="Resource" uid="uid://cvoimpmg5l8b5" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_117_previous_track.tres" id="4_37nm6"]
+[ext_resource type="Script" uid="uid://ckk2rwguxlltg" path="res://addons/2025_11_11_gdp_wow_int/script/wow_int_to_bytes_pusher.gd" id="4_vgxoc"]
+[ext_resource type="Script" uid="uid://dsbgxaqlnktfo" path="res://addons/2025_11_11_gdp_wow_int/script/wow_delay_bytes_queue.gd" id="5_ipjom"]
+[ext_resource type="Resource" uid="uid://b0kvxs5fwm6hm" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_260_next_track.tres" id="5_pom88"]
+[ext_resource type="Resource" uid="uid://defs1l7rrrub7" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_174_volume_decrement.tres" id="6_hi780"]
+[ext_resource type="Script" uid="uid://b66ckvmykthk4" path="res://addons/2025_11_11_gdp_wow_int/script/wow_bytes_to_single_udp.gd" id="6_mn2m8"]
+[ext_resource type="Resource" uid="uid://c1awl736eyihf" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_175_volume_increment.tres" id="7_5b51x"]
+[ext_resource type="Script" uid="uid://ccegsfrr8scfx" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/control/ui_overwatch_child_Integer_relay.gd" id="7_awofk"]
+[ext_resource type="Resource" uid="uid://c5r53mvocs0s0" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_173_volume_mute.tres" id="8_k2f8r"]
+[ext_resource type="Script" uid="uid://b6ukl4cmi00al" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/control/ui2d_glue_with_buttons_signal_iid_link.gd" id="8_wymyd"]
+[ext_resource type="Script" uid="uid://ok57wltyb8vh" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/control/ui2d_broadcast_iid_control_buttons__on_off.gd" id="9_aa38j"]
+[ext_resource type="Script" uid="uid://grifmcy8njoe" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/iid_link_value_on_off.gd.gd" id="10_37nm6"]
+[ext_resource type="Resource" uid="uid://c1u57mhvo344q" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_a.tres" id="11_pom88"]
+[ext_resource type="Resource" uid="uid://c44pk1h86ra0u" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_record.tres" id="12_hi780"]
+[ext_resource type="Resource" uid="uid://cydsgcvs8ko4h" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_b.tres" id="13_5b51x"]
+[ext_resource type="Resource" uid="uid://c55a1mj15fkv3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_x.tres" id="14_k2f8r"]
+[ext_resource type="Resource" uid="uid://b0r1gkbpwqxh4" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_y.tres" id="15_geba0"]
+[ext_resource type="Resource" uid="uid://d12ghadqcjmv3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_sbr.tres" id="16_mhpio"]
+[ext_resource type="Resource" uid="uid://rgyq62rdpfyb" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_sbl.tres" id="17_6ul3g"]
+[ext_resource type="Resource" uid="uid://c0o3a7wdk0lps" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_arrow_down.tres" id="18_yi1ld"]
+[ext_resource type="Resource" uid="uid://cvbc75josst6m" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_arrow_right.tres" id="19_6bvpi"]
+[ext_resource type="Resource" uid="uid://jvcv51kg8kfl" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_arrow_left.tres" id="20_4jtq4"]
+[ext_resource type="Resource" uid="uid://dj0h3ghkh5fe7" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_arrow_up.tres" id="21_k64pv"]
+[ext_resource type="Resource" uid="uid://bf1ekjlwuejhi" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_ml.tres" id="22_3t214"]
+[ext_resource type="Resource" uid="uid://cxio0eya8kbmb" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_mr.tres" id="23_tu4oc"]
+[ext_resource type="Resource" uid="uid://bq1gwvnuhp7sn" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_mc.tres" id="24_2mpea"]
+[ext_resource type="Script" uid="uid://bwwn2dbrijb0u" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/iid_float_range_in_out.gd" id="25_psygy"]
+[ext_resource type="Script" uid="uid://cigjimhg30t1d" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/beans/iid_data_in_out_range.gd" id="26_pj141"]
+[ext_resource type="Resource" uid="uid://cjvwblb8cv6fj" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_tl.tres" id="27_kyjhh"]
+[ext_resource type="Script" uid="uid://cdxcauos3vijf" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/beans/iid_data_in_out_group_range.gd" id="28_uvvr0"]
+[ext_resource type="Resource" uid="uid://3m43y3cvmgs4" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_tr.tres" id="29_8jscv"]
+[ext_resource type="Resource" uid="uid://cwf7elx1fbhu6" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_jbl.tres" id="30_0qc1v"]
+[ext_resource type="Resource" uid="uid://clg7o8cayy2e3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_jbr.tres" id="31_jqmxw"]
+[ext_resource type="Resource" uid="uid://0ft1jmv1xhe6" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_left_down.tres" id="32_1rbq2"]
+[ext_resource type="Resource" uid="uid://bulgrav1p556o" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_left_up.tres" id="33_48pg5"]
+[ext_resource type="Resource" uid="uid://dwei7kwni0mkd" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_left_left.tres" id="34_f6hfb"]
+[ext_resource type="Resource" uid="uid://q34q5eqvp3v3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_left_right.tres" id="35_ks6tx"]
+[ext_resource type="Resource" uid="uid://cokes6ki8312y" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_right_down.tres" id="36_umivo"]
+[ext_resource type="Resource" uid="uid://dk3r5im23vk6m" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_right_up.tres" id="37_75q53"]
+[ext_resource type="Resource" uid="uid://cacp35vx4aj41" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_right_left.tres" id="38_us5l6"]
+[ext_resource type="Resource" uid="uid://hh5fxqo8rqrg" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_right_right.tres" id="39_oehkm"]
+[ext_resource type="Script" uid="uid://dvk3cj3mmr8m4" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/gamepad/test_transmission1817.gd" id="40_lkhm2"]
+[ext_resource type="Resource" uid="uid://bqannx6y66aq8" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/gamepad/resource/r_gamepad.tres" id="41_3g11o"]
+[ext_resource type="Script" uid="uid://byq2v4404bls7" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/gamepad/s2w_data_gamepad_18_17.gd" id="42_3bx7b"]
+[ext_resource type="PackedScene" uid="uid://b032vmhidqxpl" path="res://addons/2025_12_04_gdp_s2w_int_utility/scene/elements/s2w_keyboard_pusher.tscn" id="50_37nm6"]
+
+[sub_resource type="Resource" id="Resource_3c6gg"]
+script = ExtResource("26_pj141")
+min_value = 0.2
+max_value = 1.0
+use_exit = true
+integer_in_out = ExtResource("27_kyjhh")
+metadata/_custom_type_script = "uid://cigjimhg30t1d"
+
+[sub_resource type="Resource" id="Resource_88dq0"]
+script = ExtResource("28_uvvr0")
+group = Array[ExtResource("26_pj141")]([SubResource("Resource_3c6gg")])
+metadata/_custom_type_script = "uid://cdxcauos3vijf"
+
+[sub_resource type="Resource" id="Resource_i5jns"]
+script = ExtResource("26_pj141")
+min_value = 0.2
+max_value = 1.0
+use_exit = true
+integer_in_out = ExtResource("29_8jscv")
+metadata/_custom_type_script = "uid://cigjimhg30t1d"
+
+[sub_resource type="Resource" id="Resource_gu3ox"]
+script = ExtResource("28_uvvr0")
+group = Array[ExtResource("26_pj141")]([SubResource("Resource_i5jns")])
+metadata/_custom_type_script = "uid://cdxcauos3vijf"
+
+[sub_resource type="Resource" id="Resource_kn0us"]
+script = ExtResource("26_pj141")
+min_value = -1.0
+max_value = -0.2
+use_exit = true
+integer_in_out = ExtResource("32_1rbq2")
+metadata/_custom_type_script = "uid://cigjimhg30t1d"
+
+[sub_resource type="Resource" id="Resource_l5t8w"]
+script = ExtResource("26_pj141")
+min_value = 0.2
+max_value = 1.0
+use_exit = true
+integer_in_out = ExtResource("33_48pg5")
+metadata/_custom_type_script = "uid://cigjimhg30t1d"
+
+[sub_resource type="Resource" id="Resource_mckog"]
+script = ExtResource("28_uvvr0")
+group = Array[ExtResource("26_pj141")]([SubResource("Resource_kn0us"), SubResource("Resource_l5t8w")])
+metadata/_custom_type_script = "uid://cdxcauos3vijf"
+
+[sub_resource type="Resource" id="Resource_uf7ue"]
+script = ExtResource("26_pj141")
+min_value = -1.0
+max_value = -0.2
+use_exit = true
+integer_in_out = ExtResource("34_f6hfb")
+metadata/_custom_type_script = "uid://cigjimhg30t1d"
+
+[sub_resource type="Resource" id="Resource_1l0y0"]
+script = ExtResource("26_pj141")
+min_value = 0.2
+max_value = 1.0
+use_exit = true
+integer_in_out = ExtResource("35_ks6tx")
+metadata/_custom_type_script = "uid://cigjimhg30t1d"
+
+[sub_resource type="Resource" id="Resource_fnmmj"]
+script = ExtResource("28_uvvr0")
+group = Array[ExtResource("26_pj141")]([SubResource("Resource_uf7ue"), SubResource("Resource_1l0y0")])
+metadata/_custom_type_script = "uid://cdxcauos3vijf"
+
+[sub_resource type="Resource" id="Resource_s10b7"]
+script = ExtResource("26_pj141")
+min_value = -1.0
+max_value = -0.2
+use_exit = true
+integer_in_out = ExtResource("36_umivo")
+metadata/_custom_type_script = "uid://cigjimhg30t1d"
+
+[sub_resource type="Resource" id="Resource_hvc57"]
+script = ExtResource("26_pj141")
+min_value = 0.2
+max_value = 1.0
+use_exit = true
+integer_in_out = ExtResource("37_75q53")
+metadata/_custom_type_script = "uid://cigjimhg30t1d"
+
+[sub_resource type="Resource" id="Resource_ttx7l"]
+script = ExtResource("28_uvvr0")
+group = Array[ExtResource("26_pj141")]([SubResource("Resource_s10b7"), SubResource("Resource_hvc57")])
+metadata/_custom_type_script = "uid://cdxcauos3vijf"
+
+[sub_resource type="Resource" id="Resource_likjw"]
+script = ExtResource("26_pj141")
+min_value = -1.0
+max_value = -0.2
+use_exit = true
+integer_in_out = ExtResource("38_us5l6")
+metadata/_custom_type_script = "uid://cigjimhg30t1d"
+
+[sub_resource type="Resource" id="Resource_u5o3a"]
+script = ExtResource("26_pj141")
+min_value = 0.2
+max_value = 1.0
+use_exit = true
+integer_in_out = ExtResource("39_oehkm")
+metadata/_custom_type_script = "uid://cigjimhg30t1d"
+
+[sub_resource type="Resource" id="Resource_4m6ie"]
+script = ExtResource("28_uvvr0")
+group = Array[ExtResource("26_pj141")]([SubResource("Resource_likjw"), SubResource("Resource_u5o3a")])
+metadata/_custom_type_script = "uid://cdxcauos3vijf"
+
+[sub_resource type="Resource" id="Resource_8ebhs"]
+script = ExtResource("42_3bx7b")
+button_y_up = true
+button_b_right = true
+button_a_down = true
+button_x_left = true
+joystick_left_vertical_axis_n1_p1_percent = 5.0
+metadata/_custom_type_script = "uid://byq2v4404bls7"
+
+[node name="MainDemo" type="Node3D"]
+
+[node name="ControlMediaPlayer" type="Control" parent="."]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 0.078
+offset_right = 2.0
+offset_bottom = 0.063999176
+
+[node name="UI2DGlueWithSignalIIDLink2" type="Node" parent="ControlMediaPlayer" node_paths=PackedStringArray("parent_to_overwatch")]
+script = ExtResource("8_wymyd")
+parent_to_overwatch = NodePath("..")
+metadata/_custom_type_script = "uid://b6ukl4cmi00al"
+
+[node name="UI2DBroadcastControlButtons2" type="Node" parent="ControlMediaPlayer" node_paths=PackedStringArray("parent_to_overwatch")]
+script = ExtResource("9_aa38j")
+parent_to_overwatch = NodePath("..")
+metadata/_custom_type_script = "uid://ok57wltyb8vh"
+
+[node name="Button" type="Button" parent="ControlMediaPlayer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.128
+anchor_bottom = 1.0
+offset_right = 0.20800018
+offset_bottom = -3.0
+text = "Play"
+
+[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("2_wymyd")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="Button2" type="Button" parent="ControlMediaPlayer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.148
+anchor_right = 0.31
+anchor_bottom = 0.9250001
+offset_left = -8.071999
+offset_right = 4.6600037
+text = "Stop"
+
+[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button2"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("3_aa38j")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="Button3" type="Button" parent="ControlMediaPlayer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.128
+anchor_bottom = 1.0
+offset_left = 173.0
+offset_right = 182.20801
+offset_bottom = -3.0
+text = "Previous"
+
+[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button3"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("4_37nm6")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="Button4" type="Button" parent="ControlMediaPlayer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.148
+anchor_right = 0.31
+anchor_bottom = 0.9250001
+offset_left = 173.92801
+offset_top = -1.0
+offset_right = 186.66
+offset_bottom = -1.0000038
+text = "Next"
+
+[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button4"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("5_pom88")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="Button5" type="Button" parent="ControlMediaPlayer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.128
+anchor_bottom = 1.0
+offset_left = 359.0
+offset_top = 2.0
+offset_right = 368.208
+offset_bottom = -1.0
+text = "-"
+
+[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button5"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("6_hi780")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="Button6" type="Button" parent="ControlMediaPlayer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.148
+anchor_right = 0.31
+anchor_bottom = 0.9250001
+offset_left = 359.928
+offset_top = 1.0
+offset_right = 372.66
+offset_bottom = 0.9999962
+text = "+"
+
+[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button6"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("7_5b51x")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="Button7" type="Button" parent="ControlMediaPlayer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.148
+anchor_right = 0.31
+anchor_bottom = 0.9250001
+offset_left = 461.928
+offset_top = 4.0
+offset_right = 474.66
+offset_bottom = 3.9999962
+text = "Mute"
+
+[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button7"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("8_k2f8r")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="ControlPiano" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.615
+anchor_top = 0.581
+anchor_right = 0.675
+anchor_bottom = 0.678
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2moes")
+
+[node name="Button" type="Button" parent="ControlPiano"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "MIDI"
+
+[node name="Node3D" type="Node3D" parent="."]
+script = ExtResource("2_hov8q")
+
+[node name="InputToInteger" type="Node" parent="Node3D"]
+script = ExtResource("3_rcwcq")
+input_to_integer_press_release = "Space|1024|2024
+Escape|1027|2027
+Space|1032|2032
+PageUp|1033|2033
+PageDown|1034|2034
+End|1035|2035
+Home|1036|2036
+Left|1037|2037
+Up|1038|2038
+Right|1039|2039
+Down|1040|2040
+"
+
+[node name="IntegerToBytes" type="Node" parent="Node3D" node_paths=PackedStringArray("bytes_delayer")]
+script = ExtResource("4_vgxoc")
+bytes_delayer = NodePath("WowDelayBytesQueue")
+
+[node name="WowDelayBytesQueue" type="Node" parent="Node3D/IntegerToBytes"]
+script = ExtResource("5_ipjom")
+metadata/_custom_type_script = "uid://dsbgxaqlnktfo"
+
+[node name="WowBytesToSingleUdp" type="Node" parent="Node3D/IntegerToBytes"]
+script = ExtResource("6_mn2m8")
+target_ip = "192.168.178.111"
+metadata/_custom_type_script = "uid://b66ckvmykthk4"
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="UIOverwatchChildIntegerRelay" type="Node" parent="Control" node_paths=PackedStringArray("parent_to_overwatch")]
+script = ExtResource("7_awofk")
+parent_to_overwatch = NodePath("..")
+metadata/_custom_type_script = "uid://ccegsfrr8scfx"
+
+[node name="UI2DGlueWithSignalIIDLink" type="Node" parent="Control" node_paths=PackedStringArray("parent_to_overwatch")]
+script = ExtResource("8_wymyd")
+parent_to_overwatch = NodePath("..")
+metadata/_custom_type_script = "uid://b6ukl4cmi00al"
+
+[node name="UI2DBroadcastControlButtons" type="Node" parent="Control" node_paths=PackedStringArray("parent_to_overwatch")]
+script = ExtResource("9_aa38j")
+parent_to_overwatch = NodePath("..")
+metadata/_custom_type_script = "uid://ok57wltyb8vh"
+
+[node name="ButtonDownA" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 12.275
+anchor_top = 4.525
+anchor_right = 13.271
+anchor_bottom = 5.3
+offset_left = -3.05176e-05
+offset_right = 0.0171509
+text = "A"
+
+[node name="IIDLinkIndexValueOnOff" type="Node" parent="Control/ButtonDownA"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("11_pom88")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="ButtonRecord" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 13.225
+anchor_top = 6.1
+anchor_right = 14.221
+anchor_bottom = 6.875
+offset_top = -1.52588e-05
+offset_right = 0.0171509
+offset_bottom = -3.05176e-05
+text = "R"
+
+[node name="IIDLinkIndexValueOnOff" type="Node" parent="Control/ButtonRecord"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("12_hi780")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="ButtonRghtB" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 13.15
+anchor_top = 3.425
+anchor_right = 14.146
+anchor_bottom = 4.2
+offset_right = 0.0171509
+offset_bottom = -1.52588e-05
+text = "B"
+
+[node name="IIDLinkIndexValueOnOff" type="Node" parent="Control/ButtonRghtB"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("13_5b51x")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="ButtonLeftX" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 11.425
+anchor_top = 3.4
+anchor_right = 12.421
+anchor_bottom = 4.175
+offset_right = 0.0171509
+text = "X"
+
+[node name="IIDLinkIndexValueOnOff2" type="Node" parent="Control/ButtonLeftX"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("14_k2f8r")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="ButtonUpY" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 12.35
+anchor_top = 2.45
+anchor_right = 13.346
+anchor_bottom = 3.225
+offset_right = 0.0171509
+text = "Y"
+
+[node name="IIDLinkIndexValueOnOff3" type="Node" parent="Control/ButtonUpY"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("15_geba0")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="ButtonSideButtonRight" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 12.35
+anchor_top = 1.0
+anchor_right = 13.346
+anchor_bottom = 1.775
+offset_right = 0.0171509
+text = "SBR"
+
+[node name="IIDLinkIndexValueOnOff4" type="Node" parent="Control/ButtonSideButtonRight"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("16_mhpio")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="ButtonSideButtonLeft" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 3.55
+anchor_top = 1.25
+anchor_right = 4.546
+anchor_bottom = 2.025
+offset_right = 0.0171814
+text = "SBL"
+
+[node name="IIDLinkIndexValueOnOff5" type="Node" parent="Control/ButtonSideButtonLeft"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("17_6ul3g")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="ButtonArrowDown" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 3.975
+anchor_top = 6.85
+anchor_right = 5.5
+anchor_bottom = 7.625
+offset_right = -1.52588e-05
+offset_bottom = -3.05176e-05
+text = "DOWN"
+
+[node name="IIDLinkIndexValueOnOff6" type="Node" parent="Control/ButtonArrowDown"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("18_yi1ld")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="ButtonArrowRight" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 5.125
+anchor_top = 5.725
+anchor_right = 6.525
+anchor_bottom = 6.5
+offset_left = -1.52588e-05
+offset_top = -1.52588e-05
+offset_right = -16.1428
+offset_bottom = -3.05176e-05
+text = "RIGHT"
+
+[node name="IIDLinkIndexValueOnOff7" type="Node" parent="Control/ButtonArrowRight"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("19_6bvpi")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="ButtonArrowLeft" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 3.4
+anchor_top = 5.7
+anchor_right = 4.5
+anchor_bottom = 6.475
+offset_top = -1.52588e-05
+offset_right = -4.14282
+text = "LEFT"
+
+[node name="IIDLinkIndexValueOnOff8" type="Node" parent="Control/ButtonArrowLeft"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("20_4jtq4")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="ButtonArrowUp" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 4.325
+anchor_top = 4.75
+anchor_right = 5.321
+anchor_bottom = 5.525
+offset_left = -1.52588e-05
+offset_right = 0.0171814
+text = "UP"
+
+[node name="IIDLinkIndexValueOnOff9" type="Node" parent="Control/ButtonArrowUp"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("21_k64pv")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="CheckButtonMenuLeft2" type="CheckButton" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 6.275
+anchor_top = 3.125
+anchor_right = 8.075
+anchor_bottom = 3.975
+offset_right = -28.0
+text = "ML"
+
+[node name="IIDLinkIndexValueOnOff10" type="Node" parent="Control/CheckButtonMenuLeft2"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("22_3t214")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="CheckButtonMenuRight" type="CheckButton" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 8.6
+anchor_top = 3.075
+anchor_right = 10.425
+anchor_bottom = 3.925
+offset_right = -1.0
+text = "MR"
+
+[node name="IIDLinkIndexValueOnOff11" type="Node" parent="Control/CheckButtonMenuRight"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("23_tu4oc")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="CheckButtonMenuCenter" type="CheckButton" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 7.475
+anchor_top = 4.125
+anchor_right = 9.3
+anchor_bottom = 4.975
+offset_right = -1.0
+offset_bottom = -1.52588e-05
+text = "MC"
+
+[node name="IIDLinkIndexValueOnOff12" type="Node" parent="Control/CheckButtonMenuCenter"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("24_2mpea")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="VSliderTriggerLeft" type="VSlider" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.15
+anchor_top = 1.575
+anchor_right = 1.65
+anchor_bottom = 4.9
+max_value = 1.0
+step = 0.1
+
+[node name="IIDFloatRangeInOut5" type="Node" parent="Control/VSliderTriggerLeft"]
+script = ExtResource("25_psygy")
+in_out_range = SubResource("Resource_88dq0")
+metadata/_custom_type_script = "uid://bwwn2dbrijb0u"
+
+[node name="VSliderTriggerRight" type="VSlider" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 15.4
+anchor_top = 2.0
+anchor_right = 15.85
+anchor_bottom = 5.325
+offset_bottom = -1.52588e-05
+max_value = 1.0
+step = 0.1
+
+[node name="IIDFloatRangeInOut6" type="Node" parent="Control/VSliderTriggerRight"]
+script = ExtResource("25_psygy")
+in_out_range = SubResource("Resource_gu3ox")
+metadata/_custom_type_script = "uid://bwwn2dbrijb0u"
+
+[node name="CheckBoxJoystickLeft" type="CheckBox" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 3.625
+anchor_top = 2.9
+anchor_right = 5.0
+anchor_bottom = 4.0
+offset_left = -1.52588e-05
+text = "JLB"
+
+[node name="IIDLinkIndexValueOnOff13" type="Node" parent="Control/CheckBoxJoystickLeft"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("30_0qc1v")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="CheckBoxJoystickRight" type="CheckBox" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 9.975
+anchor_top = 6.0
+anchor_right = 11.35
+anchor_bottom = 7.1
+offset_top = -1.52588e-05
+text = "JRB"
+
+[node name="IIDLinkIndexValueOnOff14" type="Node" parent="Control/CheckBoxJoystickRight"]
+script = ExtResource("10_37nm6")
+integer_value = ExtResource("31_jqmxw")
+metadata/_custom_type_script = "uid://crofvpbcssekp"
+
+[node name="VSliderJoystickLeftVertical" type="VSlider" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 5.174
+anchor_top = 2.9
+anchor_right = 5.754
+anchor_bottom = 4.1
+offset_left = -1.96001
+offset_right = -0.160004
+offset_bottom = -1.52588e-05
+min_value = -1.0
+max_value = 1.0
+step = 0.1
+
+[node name="IIDFloatRangeInOut5" type="Node" parent="Control/VSliderJoystickLeftVertical"]
+script = ExtResource("25_psygy")
+in_out_range = SubResource("Resource_mckog")
+metadata/_custom_type_script = "uid://bwwn2dbrijb0u"
+
+[node name="HSliderJoystickLeftHorizontal" type="HSlider" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 3.05
+anchor_top = 3.9
+anchor_right = 4.925
+anchor_bottom = 4.55
+min_value = -1.0
+max_value = 1.0
+step = 0.1
+
+[node name="IIDFloatRangeInOut" type="Node" parent="Control/HSliderJoystickLeftHorizontal"]
+script = ExtResource("25_psygy")
+in_out_range = SubResource("Resource_fnmmj")
+metadata/_custom_type_script = "uid://bwwn2dbrijb0u"
+
+[node name="VSliderJoystickRightVertical" type="VSlider" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 11.65
+anchor_top = 6.125
+anchor_right = 12.05
+anchor_bottom = 7.325
+offset_left = -3.05176e-05
+offset_top = -1.52588e-05
+min_value = -1.0
+max_value = 1.0
+step = 0.1
+
+[node name="IIDFloatRangeInOut4" type="Node" parent="Control/VSliderJoystickRightVertical"]
+script = ExtResource("25_psygy")
+in_out_range = SubResource("Resource_ttx7l")
+metadata/_custom_type_script = "uid://bwwn2dbrijb0u"
+
+[node name="HSliderJoystickRightHorizontal" type="HSlider" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 9.55
+anchor_top = 6.9
+anchor_right = 11.425
+anchor_bottom = 7.55
+min_value = -1.0
+max_value = 1.0
+step = 0.1
+
+[node name="IIDFloatRangeInOut3" type="Node" parent="Control/HSliderJoystickRightHorizontal"]
+script = ExtResource("25_psygy")
+in_out_range = SubResource("Resource_4m6ie")
+metadata/_custom_type_script = "uid://bwwn2dbrijb0u"
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("40_lkhm2")
+to_send = ExtResource("41_3g11o")
+receiver = SubResource("Resource_8ebhs")
+
+[node name="NodeMidi" type="Node" parent="."]
+script = ExtResource("1_2moes")
+
+[node name="NodeMedia" type="Node" parent="."]
+
+[node name="S2wKeyboardPusher" parent="." instance=ExtResource("50_37nm6")]
+
+[connection signal="on_integer_index_value_relayed" from="ControlMediaPlayer/UI2DBroadcastControlButtons2" to="Node3D/IntegerToBytes" method="push_player_index_and_value"]
+[connection signal="on_integer_value_relayed" from="ControlMediaPlayer/UI2DBroadcastControlButtons2" to="Node3D/IntegerToBytes" method="push_integer_value"]
+[connection signal="on_integer_generated" from="ControlPiano" to="Node3D/IntegerToBytes" method="push_integer_value"]
+[connection signal="button_down" from="ControlPiano/Button" to="ControlPiano" method="press_random_note_for_a_seconds"]
+[connection signal="on_integer_input" from="Node3D/InputToInteger" to="Node3D/IntegerToBytes" method="push_integer_value"]
+[connection signal="on_bytes_to_push" from="Node3D/IntegerToBytes" to="Node3D/IntegerToBytes/WowBytesToSingleUdp" method="push_bytes"]
+[connection signal="on_integer_index_value_relayed" from="Control/UIOverwatchChildIntegerRelay" to="Node3D/IntegerToBytes" method="push_player_index_and_value"]
+[connection signal="on_integer_value_relayed" from="Control/UIOverwatchChildIntegerRelay" to="Node3D/IntegerToBytes" method="push_integer_value"]
+[connection signal="on_integer_index_value_relayed" from="Control/UI2DBroadcastControlButtons" to="Node3D/IntegerToBytes" method="push_player_index_and_value"]
+[connection signal="on_integer_value_relayed" from="Control/UI2DBroadcastControlButtons" to="Node3D/IntegerToBytes" method="push_integer_value"]
+[connection signal="value_changed" from="Control/VSliderTriggerLeft" to="Control/VSliderTriggerLeft/IIDFloatRangeInOut5" method="set_current_value"]
+[connection signal="value_changed" from="Control/VSliderTriggerRight" to="Control/VSliderTriggerRight/IIDFloatRangeInOut6" method="set_current_value"]
+[connection signal="value_changed" from="Control/VSliderJoystickLeftVertical" to="Control/VSliderJoystickLeftVertical/IIDFloatRangeInOut5" method="set_current_value"]
+[connection signal="value_changed" from="Control/HSliderJoystickLeftHorizontal" to="Control/HSliderJoystickLeftHorizontal/IIDFloatRangeInOut" method="set_current_value"]
+[connection signal="value_changed" from="Control/VSliderJoystickRightVertical" to="Control/VSliderJoystickRightVertical/IIDFloatRangeInOut4" method="set_current_value"]
+[connection signal="value_changed" from="Control/HSliderJoystickRightHorizontal" to="Control/HSliderJoystickRightHorizontal/IIDFloatRangeInOut3" method="set_current_value"]
+[connection signal="on_integer_keystroke_requested" from="S2wKeyboardPusher" to="Node3D/IntegerToBytes" method="push_integer_value"]
