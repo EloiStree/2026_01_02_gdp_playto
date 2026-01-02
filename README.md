@@ -1,2 +1,10 @@
 # 2026_01_02_gdp_playto
 Here is some GDScript that, through IID S2W, allows you to play games made with Godot.
+
+
+- 10 Seconds Ninja https://github.com/EloiStree/PlayTo_10SecondsNinja
+- Steath Bastard https://github.com/EloiStree/PlayTo_StealthBastard
+- Silksong https://github.com/EloiStree/PlayTo_Silksong
+- ARC Raiders https://github.com/EloiStree/PlayTo_ArcRaiders
+- Liftoff  https://github.com/EloiStree/PlayTo_Liftoff
+- World of Warcraft https://github.com/EloiStree/2024_08_29_ScratchToWarcraft
