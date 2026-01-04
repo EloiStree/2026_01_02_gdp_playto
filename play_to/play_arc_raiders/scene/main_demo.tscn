@@ -1,55 +1,70 @@
-[gd_scene load_steps=68 format=3 uid="uid://cf5wjxwqayt62"]
+[gd_scene load_steps=69 format=3 uid="uid://cf5wjxwqayt62"]
 
 [ext_resource type="Script" uid="uid://d3x3shqg2b24i" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/midi/s2w_node_midi.gd" id="1_2moes"]
 [ext_resource type="Script" uid="uid://xymoyasai31d" path="res://addons/2026_01_02_gdp_playto/play_to/play_hollow_knight_silksong/script/check_input_silksong.gd" id="2_hov8q"]
-[ext_resource type="Resource" uid="uid://3i42bqxk0ot" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_179_play.tres" id="2_wymyd"]
-[ext_resource type="Resource" uid="uid://dxnsu784d0js7" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_178_stop.tres" id="3_aa38j"]
 [ext_resource type="Script" uid="uid://d00un6ohbnk1w" path="res://addons/2025_11_11_gdp_wow_int/script/wow_input_to_integer.gd" id="3_rcwcq"]
-[ext_resource type="Resource" uid="uid://cvoimpmg5l8b5" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_117_previous_track.tres" id="4_37nm6"]
 [ext_resource type="Script" uid="uid://ckk2rwguxlltg" path="res://addons/2025_11_11_gdp_wow_int/script/wow_int_to_bytes_pusher.gd" id="4_vgxoc"]
 [ext_resource type="Script" uid="uid://dsbgxaqlnktfo" path="res://addons/2025_11_11_gdp_wow_int/script/wow_delay_bytes_queue.gd" id="5_ipjom"]
-[ext_resource type="Resource" uid="uid://b0kvxs5fwm6hm" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_260_next_track.tres" id="5_pom88"]
-[ext_resource type="Resource" uid="uid://defs1l7rrrub7" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_174_volume_decrement.tres" id="6_hi780"]
 [ext_resource type="Script" uid="uid://b66ckvmykthk4" path="res://addons/2025_11_11_gdp_wow_int/script/wow_bytes_to_single_udp.gd" id="6_mn2m8"]
-[ext_resource type="Resource" uid="uid://c1awl736eyihf" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_175_volume_increment.tres" id="7_5b51x"]
 [ext_resource type="Script" uid="uid://ccegsfrr8scfx" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/control/ui_overwatch_child_Integer_relay.gd" id="7_awofk"]
-[ext_resource type="Resource" uid="uid://c5r53mvocs0s0" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_173_volume_mute.tres" id="8_k2f8r"]
 [ext_resource type="Script" uid="uid://b6ukl4cmi00al" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/control/ui2d_glue_with_buttons_signal_iid_link.gd" id="8_wymyd"]
 [ext_resource type="Script" uid="uid://ok57wltyb8vh" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/control/ui2d_broadcast_iid_control_buttons__on_off.gd" id="9_aa38j"]
 [ext_resource type="Script" uid="uid://grifmcy8njoe" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/iid_link_value_on_off.gd.gd" id="10_37nm6"]
-[ext_resource type="Resource" uid="uid://c1u57mhvo344q" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_a.tres" id="11_pom88"]
-[ext_resource type="Resource" uid="uid://c44pk1h86ra0u" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_record.tres" id="12_hi780"]
-[ext_resource type="Resource" uid="uid://cydsgcvs8ko4h" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_b.tres" id="13_5b51x"]
-[ext_resource type="Resource" uid="uid://c55a1mj15fkv3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_x.tres" id="14_k2f8r"]
-[ext_resource type="Resource" uid="uid://b0r1gkbpwqxh4" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_y.tres" id="15_geba0"]
-[ext_resource type="Resource" uid="uid://d12ghadqcjmv3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_sbr.tres" id="16_mhpio"]
-[ext_resource type="Resource" uid="uid://rgyq62rdpfyb" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_sbl.tres" id="17_6ul3g"]
-[ext_resource type="Resource" uid="uid://c0o3a7wdk0lps" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_arrow_down.tres" id="18_yi1ld"]
-[ext_resource type="Resource" uid="uid://cvbc75josst6m" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_arrow_right.tres" id="19_6bvpi"]
-[ext_resource type="Resource" uid="uid://jvcv51kg8kfl" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_arrow_left.tres" id="20_4jtq4"]
-[ext_resource type="Resource" uid="uid://dj0h3ghkh5fe7" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_arrow_up.tres" id="21_k64pv"]
-[ext_resource type="Resource" uid="uid://bf1ekjlwuejhi" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_ml.tres" id="22_3t214"]
-[ext_resource type="Resource" uid="uid://cxio0eya8kbmb" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_mr.tres" id="23_tu4oc"]
-[ext_resource type="Resource" uid="uid://bq1gwvnuhp7sn" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_mc.tres" id="24_2mpea"]
+[ext_resource type="Resource" uid="uid://c1u57mhvo344q" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_a.tres" id="11_pom88"]
+[ext_resource type="Resource" uid="uid://c44pk1h86ra0u" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_record.tres" id="12_hi780"]
+[ext_resource type="Resource" uid="uid://cydsgcvs8ko4h" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_b.tres" id="13_5b51x"]
+[ext_resource type="Resource" uid="uid://c55a1mj15fkv3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_x.tres" id="14_k2f8r"]
+[ext_resource type="Resource" uid="uid://b0r1gkbpwqxh4" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_y.tres" id="15_geba0"]
+[ext_resource type="Resource" uid="uid://d12ghadqcjmv3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_sbr.tres" id="16_mhpio"]
+[ext_resource type="Resource" uid="uid://rgyq62rdpfyb" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_sbl.tres" id="17_6ul3g"]
+[ext_resource type="Resource" uid="uid://c0o3a7wdk0lps" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_arrow_down.tres" id="18_yi1ld"]
+[ext_resource type="Resource" uid="uid://cvbc75josst6m" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_arrow_right.tres" id="19_6bvpi"]
+[ext_resource type="Resource" uid="uid://jvcv51kg8kfl" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_arrow_left.tres" id="20_4jtq4"]
+[ext_resource type="Resource" uid="uid://dj0h3ghkh5fe7" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_arrow_up.tres" id="21_k64pv"]
+[ext_resource type="Resource" uid="uid://bf1ekjlwuejhi" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_ml.tres" id="22_3t214"]
+[ext_resource type="Resource" uid="uid://cxio0eya8kbmb" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_mr.tres" id="23_tu4oc"]
+[ext_resource type="Resource" uid="uid://bq1gwvnuhp7sn" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_mc.tres" id="24_2mpea"]
 [ext_resource type="Script" uid="uid://bwwn2dbrijb0u" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/iid_float_range_in_out.gd" id="25_psygy"]
 [ext_resource type="Script" uid="uid://cigjimhg30t1d" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/beans/iid_data_in_out_range.gd" id="26_pj141"]
-[ext_resource type="Resource" uid="uid://cjvwblb8cv6fj" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_tl.tres" id="27_kyjhh"]
+[ext_resource type="Resource" uid="uid://cjvwblb8cv6fj" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_tl.tres" id="27_kyjhh"]
 [ext_resource type="Script" uid="uid://cdxcauos3vijf" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/beans/iid_data_in_out_group_range.gd" id="28_uvvr0"]
-[ext_resource type="Resource" uid="uid://3m43y3cvmgs4" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_tr.tres" id="29_8jscv"]
-[ext_resource type="Resource" uid="uid://cwf7elx1fbhu6" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_jbl.tres" id="30_0qc1v"]
-[ext_resource type="Resource" uid="uid://clg7o8cayy2e3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_jbr.tres" id="31_jqmxw"]
-[ext_resource type="Resource" uid="uid://0ft1jmv1xhe6" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_left_down.tres" id="32_1rbq2"]
-[ext_resource type="Resource" uid="uid://bulgrav1p556o" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_left_up.tres" id="33_48pg5"]
-[ext_resource type="Resource" uid="uid://dwei7kwni0mkd" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_left_left.tres" id="34_f6hfb"]
-[ext_resource type="Resource" uid="uid://q34q5eqvp3v3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_left_right.tres" id="35_ks6tx"]
-[ext_resource type="Resource" uid="uid://cokes6ki8312y" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_right_down.tres" id="36_umivo"]
-[ext_resource type="Resource" uid="uid://dk3r5im23vk6m" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_right_up.tres" id="37_75q53"]
-[ext_resource type="Resource" uid="uid://cacp35vx4aj41" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_right_left.tres" id="38_us5l6"]
-[ext_resource type="Resource" uid="uid://hh5fxqo8rqrg" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/gamepad/xbox_joystick_right_right.tres" id="39_oehkm"]
+[ext_resource type="Resource" uid="uid://3m43y3cvmgs4" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_tr.tres" id="29_8jscv"]
+[ext_resource type="Resource" uid="uid://cwf7elx1fbhu6" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_jbl.tres" id="30_0qc1v"]
+[ext_resource type="Resource" uid="uid://clg7o8cayy2e3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_jbr.tres" id="31_jqmxw"]
+[ext_resource type="Resource" uid="uid://0ft1jmv1xhe6" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_left_down.tres" id="32_1rbq2"]
+[ext_resource type="Resource" uid="uid://bulgrav1p556o" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_left_up.tres" id="33_48pg5"]
+[ext_resource type="Resource" uid="uid://dwei7kwni0mkd" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_left_left.tres" id="34_f6hfb"]
+[ext_resource type="Resource" uid="uid://q34q5eqvp3v3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_left_right.tres" id="35_ks6tx"]
+[ext_resource type="Resource" uid="uid://cokes6ki8312y" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_right_down.tres" id="36_umivo"]
+[ext_resource type="Resource" uid="uid://dk3r5im23vk6m" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_right_up.tres" id="37_75q53"]
+[ext_resource type="Resource" uid="uid://cacp35vx4aj41" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_right_left.tres" id="38_us5l6"]
+[ext_resource type="Resource" uid="uid://hh5fxqo8rqrg" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_right_right.tres" id="39_oehkm"]
 [ext_resource type="Script" uid="uid://dvk3cj3mmr8m4" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/gamepad/test_transmission1817.gd" id="40_lkhm2"]
 [ext_resource type="Resource" uid="uid://bqannx6y66aq8" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/gamepad/resource/r_gamepad.tres" id="41_3g11o"]
 [ext_resource type="Script" uid="uid://byq2v4404bls7" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/gamepad/s2w_data_gamepad_18_17.gd" id="42_3bx7b"]
-[ext_resource type="PackedScene" uid="uid://b032vmhidqxpl" path="res://addons/2025_12_04_gdp_s2w_int_utility/scene/elements/s2w_keyboard_pusher.tscn" id="50_37nm6"]
+[ext_resource type="Script" uid="uid://35nlxljs8v13" path="res://addons/2026_01_02_gdp_playto/play_to/play_arc_raiders/script/int_input_for_arc_raider.gd" id="44_rov7r"]
+[ext_resource type="PackedScene" uid="uid://cprip5k3nlody" path="res://addons/2025_12_04_gdp_s2w_int_utility/scene/elements/s2w_keyboard_pusher.tscn" id="50_37nm6"]
+
+[sub_resource type="Resource" id="Resource_wvbgc"]
+metadata/__load_path__ = "res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_179_play.tres"
+
+[sub_resource type="Resource" id="Resource_rov7r"]
+metadata/__load_path__ = "res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_178_stop.tres"
+
+[sub_resource type="Resource" id="Resource_1656y"]
+metadata/__load_path__ = "res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_117_previous_track.tres"
+
+[sub_resource type="Resource" id="Resource_joib7"]
+metadata/__load_path__ = "res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_260_next_track.tres"
+
+[sub_resource type="Resource" id="Resource_hxo3q"]
+metadata/__load_path__ = "res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_174_volume_decrement.tres"
+
+[sub_resource type="Resource" id="Resource_l1cft"]
+metadata/__load_path__ = "res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_175_volume_increment.tres"
+
+[sub_resource type="Resource" id="Resource_vx48u"]
+metadata/__load_path__ = "res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_173_volume_mute.tres"
 
 [sub_resource type="Resource" id="Resource_3c6gg"]
 script = ExtResource("26_pj141")
@@ -200,7 +215,7 @@ text = "Play"
 
 [node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button"]
 script = ExtResource("10_37nm6")
-integer_value = ExtResource("2_wymyd")
+integer_value = SubResource("Resource_wvbgc")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
 [node name="Button2" type="Button" parent="ControlMediaPlayer"]
@@ -215,7 +230,7 @@ text = "Stop"
 
 [node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button2"]
 script = ExtResource("10_37nm6")
-integer_value = ExtResource("3_aa38j")
+integer_value = SubResource("Resource_rov7r")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
 [node name="Button3" type="Button" parent="ControlMediaPlayer"]
@@ -230,7 +245,7 @@ text = "Previous"
 
 [node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button3"]
 script = ExtResource("10_37nm6")
-integer_value = ExtResource("4_37nm6")
+integer_value = SubResource("Resource_1656y")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
 [node name="Button4" type="Button" parent="ControlMediaPlayer"]
@@ -247,7 +262,7 @@ text = "Next"
 
 [node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button4"]
 script = ExtResource("10_37nm6")
-integer_value = ExtResource("5_pom88")
+integer_value = SubResource("Resource_joib7")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
 [node name="Button5" type="Button" parent="ControlMediaPlayer"]
@@ -263,7 +278,7 @@ text = "-"
 
 [node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button5"]
 script = ExtResource("10_37nm6")
-integer_value = ExtResource("6_hi780")
+integer_value = SubResource("Resource_hxo3q")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
 [node name="Button6" type="Button" parent="ControlMediaPlayer"]
@@ -280,7 +295,7 @@ text = "+"
 
 [node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button6"]
 script = ExtResource("10_37nm6")
-integer_value = ExtResource("7_5b51x")
+integer_value = SubResource("Resource_l1cft")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
 [node name="Button7" type="Button" parent="ControlMediaPlayer"]
@@ -297,7 +312,7 @@ text = "Mute"
 
 [node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button7"]
 script = ExtResource("10_37nm6")
-integer_value = ExtResource("8_k2f8r")
+integer_value = SubResource("Resource_vx48u")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
 [node name="ControlPiano" type="Control" parent="."]
@@ -734,6 +749,59 @@ script = ExtResource("1_2moes")
 
 [node name="S2wKeyboardPusher" parent="." instance=ExtResource("50_37nm6")]
 
+[node name="PlayWithArcRaiderChampion" type="Control" parent="."]
+layout_mode = 3
+anchor_top = 0.73300004
+anchor_right = 1.0
+anchor_bottom = 0.9760001
+offset_left = 1.0
+offset_top = 2.7039795
+offset_right = -4.0
+offset_bottom = 13.287964
+
+[node name="IntInputForArcRaider" type="Node" parent="PlayWithArcRaiderChampion"]
+script = ExtResource("44_rov7r")
+metadata/_custom_type_script = "uid://35nlxljs8v13"
+
+[node name="ButtonMap" type="Button" parent="PlayWithArcRaiderChampion"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.024
+anchor_top = 0.030000001
+anchor_right = 0.112
+anchor_bottom = 0.23
+offset_left = -0.16800022
+offset_top = -0.05000019
+offset_right = 0.2159996
+offset_bottom = -0.050001144
+text = "Map"
+
+[node name="ButtonInventory" type="Button" parent="PlayWithArcRaiderChampion"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.14
+anchor_top = 0.030000001
+anchor_right = 0.22900002
+anchor_bottom = 0.27400002
+offset_left = 0.019996643
+offset_top = 1.9499998
+offset_right = -0.103012085
+offset_bottom = 0.0099983215
+text = "Inventory"
+
+[node name="ButtonFlashlight" type="Button" parent="PlayWithArcRaiderChampion"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.33900002
+anchor_top = 0.030000001
+anchor_right = 0.5
+anchor_bottom = 0.27400002
+offset_left = 0.1269989
+offset_top = 1.9499998
+offset_right = 1.5
+offset_bottom = 0.0099983215
+text = "Flashlight"
+
 [connection signal="on_integer_index_value_relayed" from="ControlMediaPlayer/UI2DBroadcastControlButtons2" to="Node3D/IntegerToBytes" method="push_player_index_and_value"]
 [connection signal="on_integer_value_relayed" from="ControlMediaPlayer/UI2DBroadcastControlButtons2" to="Node3D/IntegerToBytes" method="push_integer_value"]
 [connection signal="on_integer_generated" from="ControlPiano" to="Node3D/IntegerToBytes" method="push_integer_value"]
@@ -751,3 +819,8 @@ script = ExtResource("1_2moes")
 [connection signal="value_changed" from="Control/VSliderJoystickRightVertical" to="Control/VSliderJoystickRightVertical/IIDFloatRangeInOut4" method="set_current_value"]
 [connection signal="value_changed" from="Control/HSliderJoystickRightHorizontal" to="Control/HSliderJoystickRightHorizontal/IIDFloatRangeInOut3" method="set_current_value"]
 [connection signal="on_integer_keystroke_requested" from="S2wKeyboardPusher" to="Node3D/IntegerToBytes" method="push_integer_value"]
+[connection signal="on_integer_action_requested" from="PlayWithArcRaiderChampion/IntInputForArcRaider" to="Node3D/IntegerToBytes" method="push_integer_value"]
+[connection signal="on_integer_delay_action_requested_in_milliseconds" from="PlayWithArcRaiderChampion/IntInputForArcRaider" to="Node3D/IntegerToBytes" method="push_with_local_delay_integer_value_in_milliseconds"]
+[connection signal="button_down" from="PlayWithArcRaiderChampion/ButtonMap" to="PlayWithArcRaiderChampion/IntInputForArcRaider" method="stroke_open_map"]
+[connection signal="button_down" from="PlayWithArcRaiderChampion/ButtonInventory" to="PlayWithArcRaiderChampion/IntInputForArcRaider" method="stroke_inventory"]
+[connection signal="button_down" from="PlayWithArcRaiderChampion/ButtonFlashlight" to="PlayWithArcRaiderChampion/IntInputForArcRaider" method="stroke_flashlight"]
