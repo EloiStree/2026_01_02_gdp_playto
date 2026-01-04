@@ -8,3 +8,6 @@ Here is some GDScript that, through IID S2W, allows you to play games made with 
 - ARC Raiders https://github.com/EloiStree/PlayTo_ArcRaiders
 - Liftoff  https://github.com/EloiStree/PlayTo_Liftoff
 - World of Warcraft https://github.com/EloiStree/2024_08_29_ScratchToWarcraft
+
+
+> Note: "Play To" package is dependent of the 2025_12_04_gdp_s2w_int_utility enumarator.
