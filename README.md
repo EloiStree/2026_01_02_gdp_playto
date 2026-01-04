@@ -1,3 +1,11 @@
+```
+git submodule add https://github.com/EloiStree/2026_01_02_gdp_playto.git addons/2026_01_02_gdp_playto
+git submodule update --init --recursive
+```
+
+
+---------
+
 # 2026_01_02_gdp_playto
 Here is some GDScript that, through IID S2W, allows you to play games made with Godot.
 
