@@ -1,0 +1,189 @@
+[gd_scene load_steps=5 format=3 uid="uid://5ti12uuabh83"]
+
+[ext_resource type="Script" uid="uid://cgvgke7itqhck" path="res://addons/2026_01_02_gdp_playto/play_to/abstraction/play_to_int_relay.gd" id="1_tnab2"]
+[ext_resource type="Script" uid="uid://cvuw206n050em" path="res://addons/2026_01_02_gdp_playto/play_to/play_10_seconds_ninja/script/int_input_for_10_seconds_ninja.gd" id="2_jilde"]
+[ext_resource type="Script" uid="uid://ctlqqb6pjg71x" path="res://addons/2026_01_02_gdp_playto/play_to/play_10_seconds_ninja/script/example/demo_input_for_10_seconds_ninja_level_1_await.gd" id="3_jilde"]
+[ext_resource type="Script" uid="uid://pmku0pdyv5fu" path="res://addons/2026_01_02_gdp_playto/play_to/play_10_seconds_ninja/script/example/demo_input_for_10_seconds_ninja_level_1_iid_block.gd" id="4_ms3af"]
+
+[node name="PlayWith10SecondsNinja" type="Control"]
+layout_mode = 3
+anchor_top = 0.49400002
+anchor_right = 1.006
+anchor_bottom = 0.684
+offset_left = 8.0
+offset_top = 0.07199097
+offset_right = -0.072021484
+offset_bottom = -48.208008
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tnab2")
+
+[node name="IntInputFor10SecondsNinja" type="Node" parent="."]
+script = ExtResource("2_jilde")
+metadata/_custom_type_script = "uid://cvuw206n050em"
+
+[node name="ButtonEscape" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.087000005
+anchor_bottom = 0.40800002
+offset_left = 1.0
+offset_top = 3.0
+offset_right = -0.10900116
+offset_bottom = 0.00799942
+theme_override_font_sizes/font_size = 6
+text = "Escape"
+
+[node name="ButtonEnter" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.44900003
+anchor_right = 0.081
+anchor_bottom = 0.95900005
+offset_left = 1.0
+offset_top = -0.001001358
+offset_right = -0.06700134
+offset_bottom = 0.008998871
+theme_override_font_sizes/font_size = 6
+text = "Enter"
+
+[node name="ButtonZ" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.12900001
+anchor_top = 0.061000004
+anchor_right = 0.177
+anchor_bottom = 0.95900005
+offset_left = 0.5969925
+offset_top = 0.01099968
+offset_right = -0.7389984
+offset_bottom = 0.008998871
+text = "Z"
+
+[node name="ButtonX" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.18
+anchor_top = 0.030000001
+anchor_right = 0.26500002
+anchor_bottom = 1.0
+offset_left = -0.26000214
+offset_top = 1.53
+offset_right = -0.355011
+offset_bottom = -2.0
+text = "X"
+
+[node name="ButtonC" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.27100003
+anchor_top = 0.030000001
+anchor_right = 0.351
+anchor_bottom = 1.0
+offset_left = -2.3970184
+offset_top = 1.53
+offset_right = 3.0429993
+text = "C"
+
+[node name="ButtonRestart" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35700002
+anchor_top = 0.030000001
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 2.0009918
+offset_top = 3.53
+offset_right = -1.5
+text = "Restart"
+
+[node name="ButtonJump" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.030000001
+anchor_right = 0.683
+anchor_bottom = 1.0
+offset_left = 11.5
+offset_top = 3.53
+offset_right = -12.281006
+text = "Jump"
+
+[node name="ButtonLeft" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.68500006
+anchor_top = 0.030000001
+anchor_right = 0.845
+anchor_bottom = 1.0
+offset_left = -1.295044
+offset_top = 3.53
+offset_right = -2.4150085
+text = "Left"
+
+[node name="ButtonRight" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.86
+anchor_top = 0.030000001
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0200195
+offset_top = 3.53
+offset_right = -8.0
+text = "Right"
+
+[node name="ButtonLevel1" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 0.115
+anchor_bottom = 1.6250001
+offset_left = -3.0
+offset_top = 4.0
+offset_right = 3.6949997
+offset_bottom = 4.3749924
+text = "Level1"
+
+[node name="Node" type="Node" parent="ButtonLevel1" node_paths=PackedStringArray("input")]
+script = ExtResource("3_jilde")
+input = NodePath("../../IntInputFor10SecondsNinja")
+auto_start = false
+
+[node name="ButtonLevel1Block" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.15200001
+anchor_top = 1.3470001
+anchor_right = 0.26200002
+anchor_bottom = 1.8780001
+offset_left = -2.064003
+offset_top = -7.003006
+offset_right = 0.1659851
+offset_bottom = -0.022003174
+text = "Level 1 Block"
+
+[node name="Node" type="Node" parent="ButtonLevel1Block" node_paths=PackedStringArray("input")]
+script = ExtResource("4_ms3af")
+input = NodePath("../../IntInputFor10SecondsNinja")
+
+[connection signal="on_integer_action_requested" from="IntInputFor10SecondsNinja" to="." method="relay_integer"]
+[connection signal="on_integer_delay_action_requested_in_milliseconds" from="IntInputFor10SecondsNinja" to="." method="relay_integer_with_milliseconds_delay"]
+[connection signal="button_down" from="ButtonEscape" to="IntInputFor10SecondsNinja" method="stroke_key_escape_200_milliseconds"]
+[connection signal="button_down" from="ButtonEnter" to="IntInputFor10SecondsNinja" method="stroke_key_enter_200_milliseconds"]
+[connection signal="button_down" from="ButtonZ" to="IntInputFor10SecondsNinja" method="start_pressing_key_z"]
+[connection signal="button_up" from="ButtonZ" to="IntInputFor10SecondsNinja" method="stop_pressing_key_z"]
+[connection signal="button_down" from="ButtonX" to="IntInputFor10SecondsNinja" method="start_pressing_key_x"]
+[connection signal="button_up" from="ButtonX" to="IntInputFor10SecondsNinja" method="stop_pressing_key_x"]
+[connection signal="button_down" from="ButtonC" to="IntInputFor10SecondsNinja" method="start_pressing_key_c"]
+[connection signal="button_up" from="ButtonC" to="IntInputFor10SecondsNinja" method="stop_pressing_key_c"]
+[connection signal="button_down" from="ButtonRestart" to="IntInputFor10SecondsNinja" method="restart_game"]
+[connection signal="button_down" from="ButtonJump" to="IntInputFor10SecondsNinja" method="start_jumping"]
+[connection signal="button_up" from="ButtonJump" to="IntInputFor10SecondsNinja" method="stop_jumping"]
+[connection signal="button_down" from="ButtonLeft" to="IntInputFor10SecondsNinja" method="start_move_left"]
+[connection signal="button_up" from="ButtonLeft" to="IntInputFor10SecondsNinja" method="stop_move_left"]
+[connection signal="button_down" from="ButtonRight" to="IntInputFor10SecondsNinja" method="start_move_right"]
+[connection signal="button_up" from="ButtonRight" to="IntInputFor10SecondsNinja" method="stop_move_right"]
+[connection signal="button_down" from="ButtonLevel1" to="ButtonLevel1/Node" method="toggle_coroutine_loop_level_1"]
+[connection signal="button_down" from="ButtonLevel1Block" to="ButtonLevel1Block/Node" method="build_and_send_level1_macro"]
+[connection signal="on_integer_block_to_relay" from="ButtonLevel1Block/Node" to="." method="relay_integer_block"]

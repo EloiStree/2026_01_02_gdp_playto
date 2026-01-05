@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=3 uid="uid://cf5wjxwqayt62"]
+[gd_scene load_steps=71 format=3 uid="uid://cf5wjxwqayt62"]
 
 [ext_resource type="Script" uid="uid://d3x3shqg2b24i" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/midi/s2w_node_midi.gd" id="1_2moes"]
 [ext_resource type="Script" uid="uid://xymoyasai31d" path="res://addons/2026_01_02_gdp_playto/play_to/play_hollow_knight_silksong/script/check_input_silksong.gd" id="2_hov8q"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://b6ukl4cmi00al" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/control/ui2d_glue_with_buttons_signal_iid_link.gd" id="8_wymyd"]
 [ext_resource type="Script" uid="uid://ok57wltyb8vh" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/control/ui2d_broadcast_iid_control_buttons__on_off.gd" id="9_aa38j"]
 [ext_resource type="Script" uid="uid://grifmcy8njoe" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/iid_link_value_on_off.gd.gd" id="10_37nm6"]
+[ext_resource type="Script" uid="uid://b0cdq6gydsiri" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/iid_block_builder/index_integer_date_block_to_bytes_package_node.gd" id="11_joib7"]
 [ext_resource type="Resource" uid="uid://c1u57mhvo344q" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_a.tres" id="11_pom88"]
 [ext_resource type="Resource" uid="uid://c44pk1h86ra0u" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_record.tres" id="12_hi780"]
 [ext_resource type="Resource" uid="uid://cydsgcvs8ko4h" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_b.tres" id="13_5b51x"]
@@ -43,6 +44,7 @@
 [ext_resource type="Resource" uid="uid://bqannx6y66aq8" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/gamepad/resource/r_gamepad.tres" id="41_3g11o"]
 [ext_resource type="Script" uid="uid://byq2v4404bls7" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/gamepad/s2w_data_gamepad_18_17.gd" id="42_3bx7b"]
 [ext_resource type="Script" uid="uid://35nlxljs8v13" path="res://addons/2026_01_02_gdp_playto/play_to/play_arc_raiders/script/int_input_for_arc_raider.gd" id="44_rov7r"]
+[ext_resource type="PackedScene" uid="uid://5ti12uuabh83" path="res://addons/2026_01_02_gdp_playto/play_to/play_10_seconds_ninja/scene/main/play_with_10_seconds_ninja.tscn" id="45_1656y"]
 [ext_resource type="PackedScene" uid="uid://cprip5k3nlody" path="res://addons/2025_12_04_gdp_s2w_int_utility/scene/elements/s2w_keyboard_pusher.tscn" id="50_37nm6"]
 
 [sub_resource type="Resource" id="Resource_wvbgc"]
@@ -187,6 +189,14 @@ metadata/_custom_type_script = "uid://byq2v4404bls7"
 
 [node name="MainDemo" type="Node3D"]
 
+[node name="PlayWith10SecondsNinja" parent="." instance=ExtResource("45_1656y")]
+anchor_top = 0.651
+anchor_right = 1.0
+anchor_bottom = 0.73200005
+offset_top = -7.3120117
+offset_right = 3.0
+offset_bottom = 0.2159729
+
 [node name="ControlMediaPlayer" type="Control" parent="."]
 layout_mode = 3
 anchor_right = 1.0
@@ -318,9 +328,11 @@ metadata/_custom_type_script = "uid://crofvpbcssekp"
 [node name="ControlPiano" type="Control" parent="."]
 layout_mode = 3
 anchor_left = 0.615
-anchor_top = 0.581
+anchor_top = 0.54
 anchor_right = 0.675
-anchor_bottom = 0.678
+anchor_bottom = 0.58100003
+offset_top = -3.480011
+offset_bottom = 4.5279846
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_2moes")
@@ -364,6 +376,9 @@ metadata/_custom_type_script = "uid://dsbgxaqlnktfo"
 script = ExtResource("6_mn2m8")
 target_ip = "192.168.178.111"
 metadata/_custom_type_script = "uid://b66ckvmykthk4"
+
+[node name="IntegerBlockToBytesArray" type="Node" parent="Node3D"]
+script = ExtResource("11_joib7")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -751,11 +766,11 @@ script = ExtResource("1_2moes")
 
 [node name="PlayWithArcRaiderChampion" type="Control" parent="."]
 layout_mode = 3
-anchor_top = 0.73300004
+anchor_top = 0.804
 anchor_right = 1.0
 anchor_bottom = 0.9760001
 offset_left = 1.0
-offset_top = 2.7039795
+offset_top = 2.3519897
 offset_right = -4.0
 offset_bottom = 13.287964
 
@@ -802,12 +817,16 @@ offset_right = 1.5
 offset_bottom = 0.0099983215
 text = "Flashlight"
 
+[connection signal="on_integer_block_relayed" from="PlayWith10SecondsNinja" to="Node3D/IntegerBlockToBytesArray" method="push_iid_block_as_bytes"]
+[connection signal="on_integer_relayed" from="PlayWith10SecondsNinja" to="Node3D/IntegerToBytes" method="push_integer_value"]
+[connection signal="on_integer_relayed_with_milliseconds_delay" from="PlayWith10SecondsNinja" to="Node3D/IntegerToBytes" method="push_with_local_delay_integer_value_in_milliseconds"]
 [connection signal="on_integer_index_value_relayed" from="ControlMediaPlayer/UI2DBroadcastControlButtons2" to="Node3D/IntegerToBytes" method="push_player_index_and_value"]
 [connection signal="on_integer_value_relayed" from="ControlMediaPlayer/UI2DBroadcastControlButtons2" to="Node3D/IntegerToBytes" method="push_integer_value"]
 [connection signal="on_integer_generated" from="ControlPiano" to="Node3D/IntegerToBytes" method="push_integer_value"]
 [connection signal="button_down" from="ControlPiano/Button" to="ControlPiano" method="press_random_note_for_a_seconds"]
 [connection signal="on_integer_input" from="Node3D/InputToInteger" to="Node3D/IntegerToBytes" method="push_integer_value"]
 [connection signal="on_bytes_to_push" from="Node3D/IntegerToBytes" to="Node3D/IntegerToBytes/WowBytesToSingleUdp" method="push_bytes"]
+[connection signal="on_block_to_relay_as_bytes_package" from="Node3D/IntegerBlockToBytesArray" to="Node3D/IntegerToBytes/WowBytesToSingleUdp" method="push_bytes"]
 [connection signal="on_integer_index_value_relayed" from="Control/UIOverwatchChildIntegerRelay" to="Node3D/IntegerToBytes" method="push_player_index_and_value"]
 [connection signal="on_integer_value_relayed" from="Control/UIOverwatchChildIntegerRelay" to="Node3D/IntegerToBytes" method="push_integer_value"]
 [connection signal="on_integer_index_value_relayed" from="Control/UI2DBroadcastControlButtons" to="Node3D/IntegerToBytes" method="push_player_index_and_value"]
