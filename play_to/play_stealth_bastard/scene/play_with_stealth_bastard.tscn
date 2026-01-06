@@ -1,0 +1,199 @@
+[gd_scene load_steps=4 format=3 uid="uid://dndfie5r8yvta"]
+
+[ext_resource type="Script" uid="uid://cgvgke7itqhck" path="res://addons/2026_01_02_gdp_playto/play_to/abstraction/play_to_int_relay.gd" id="1_ge687"]
+[ext_resource type="Script" uid="uid://4mlywjnf5ar" path="res://addons/2026_01_02_gdp_playto/play_to/play_stealth_bastard/script/int_input_for_stealth_bastard.gd" id="2_h7efj"]
+[ext_resource type="Script" uid="uid://okbht6nvtdx5" path="res://addons/2026_01_02_gdp_playto/play_to/play_stealth_bastard/script/demo_input_for_stealth_bastard_level_1_iid_block.gd" id="3_ge687"]
+
+[node name="PlayWithStealthBastard" type="Control"]
+layout_mode = 3
+anchor_top = 0.651
+anchor_right = 1.0
+anchor_bottom = 0.73200005
+offset_left = 8.0
+offset_top = -7.3120117
+offset_right = 3.0
+offset_bottom = 0.2159729
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ge687")
+
+[node name="IntInputForStealthBastard" type="Node" parent="."]
+script = ExtResource("2_h7efj")
+metadata/_custom_type_script = "uid://cvuw206n050em"
+
+[node name="ButtonEscape" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.087000005
+anchor_bottom = 0.40800002
+offset_left = 1.0
+offset_top = 3.0
+offset_right = -0.10900116
+offset_bottom = 0.00799942
+theme_override_font_sizes/font_size = 6
+text = "Escape"
+
+[node name="ButtonEnter" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.44900003
+anchor_right = 0.081
+anchor_bottom = 0.95900005
+offset_left = 1.0
+offset_top = -0.001001358
+offset_right = -0.06700134
+offset_bottom = 0.008998871
+theme_override_font_sizes/font_size = 6
+text = "Enter"
+
+[node name="ButtonZJump" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.193
+anchor_top = 0.082
+anchor_right = 0.29000002
+anchor_bottom = 0.95900005
+offset_left = 0.14899445
+offset_top = -0.018000126
+offset_right = -0.030014038
+offset_bottom = 1.0089989
+theme_override_font_sizes/font_size = 10
+text = "Jump
+Z"
+
+[node name="ButtonXCarry" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.298
+anchor_top = 0.082
+anchor_right = 0.41000003
+anchor_bottom = 1.0
+offset_left = -0.085998535
+offset_top = -0.018000126
+offset_right = 0.12998962
+offset_bottom = -3.0
+theme_override_font_sizes/font_size = 9
+text = "Carry 
+Throw
+X"
+
+[node name="ButtonCGadget" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.416
+anchor_top = 0.030000001
+anchor_right = 0.544
+anchor_bottom = 1.0
+offset_left = 0.08799744
+offset_top = 2.53
+offset_right = -0.8080139
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 10
+text = "Gadget
+C"
+
+[node name="ButtonRestart" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.55
+anchor_top = 0.030000001
+anchor_right = 0.671
+anchor_bottom = 1.0
+offset_left = -1.0090942
+offset_top = 3.53
+offset_right = 2.643921
+offset_bottom = -5.0
+theme_override_font_sizes/font_size = 10
+text = "Restart
+R"
+
+[node name="ButtonLeft" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.68500006
+anchor_top = 0.030000001
+anchor_right = 0.781
+anchor_bottom = 1.0
+offset_left = -1.295044
+offset_top = 3.53
+offset_right = 0.032989502
+text = "Left"
+
+[node name="ButtonRight" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8880001
+anchor_top = 0.030000001
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.21603394
+offset_top = 3.53
+offset_right = -8.0
+text = "Right"
+
+[node name="ButtonUp" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.78800005
+anchor_top = 0.030000001
+anchor_right = 0.8880001
+anchor_bottom = 0.551
+offset_left = 0.48397827
+offset_top = 3.53
+offset_right = -3.5493774
+offset_bottom = -1.9990005
+theme_override_font_sizes/font_size = 8
+text = "Up"
+
+[node name="ButtonDown" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77900004
+anchor_top = 0.5
+anchor_right = 0.882
+anchor_bottom = 1.0
+offset_left = 3.0469666
+offset_top = 1.5
+offset_right = -0.17401123
+offset_bottom = -3.0
+theme_override_font_sizes/font_size = 8
+text = "Down"
+
+[node name="ButtonLevel1Block" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.15200001
+anchor_top = 1.3470001
+anchor_right = 0.26200002
+anchor_bottom = 1.8780001
+offset_left = -2.064003
+offset_top = -7.003006
+offset_right = 0.1659851
+offset_bottom = -0.022003174
+text = "Level 1 Block"
+
+[node name="Node" type="Node" parent="ButtonLevel1Block" node_paths=PackedStringArray("input")]
+script = ExtResource("3_ge687")
+input = NodePath("../../IntInputForStealthBastard")
+
+[connection signal="on_integer_action_requested" from="IntInputForStealthBastard" to="." method="relay_integer"]
+[connection signal="on_integer_delay_action_requested_in_milliseconds" from="IntInputForStealthBastard" to="." method="relay_integer_with_milliseconds_delay"]
+[connection signal="button_down" from="ButtonEscape" to="IntInputForStealthBastard" method="stroke_key_escape_200_milliseconds"]
+[connection signal="button_down" from="ButtonEnter" to="IntInputForStealthBastard" method="stroke_key_enter_200_milliseconds"]
+[connection signal="button_down" from="ButtonZJump" to="IntInputForStealthBastard" method="start_jumping"]
+[connection signal="button_up" from="ButtonZJump" to="IntInputForStealthBastard" method="stop_jumping"]
+[connection signal="button_down" from="ButtonXCarry" to="IntInputForStealthBastard" method="start_carrying_or_throwing"]
+[connection signal="button_up" from="ButtonXCarry" to="IntInputForStealthBastard" method="stop_carrying_or_throwing"]
+[connection signal="button_down" from="ButtonCGadget" to="IntInputForStealthBastard" method="start_use_gadget"]
+[connection signal="button_up" from="ButtonCGadget" to="IntInputForStealthBastard" method="stop_use_gadget"]
+[connection signal="button_down" from="ButtonRestart" to="IntInputForStealthBastard" method="stroke_restart_level"]
+[connection signal="button_down" from="ButtonLeft" to="IntInputForStealthBastard" method="start_moving_left"]
+[connection signal="button_up" from="ButtonLeft" to="IntInputForStealthBastard" method="stop_moving_left"]
+[connection signal="button_down" from="ButtonRight" to="IntInputForStealthBastard" method="start_moving_right"]
+[connection signal="button_up" from="ButtonRight" to="IntInputForStealthBastard" method="stop_moving_right"]
+[connection signal="button_down" from="ButtonUp" to="IntInputForStealthBastard" method="start_moving_up"]
+[connection signal="button_up" from="ButtonUp" to="IntInputForStealthBastard" method="stop_moving_up"]
+[connection signal="button_down" from="ButtonDown" to="IntInputForStealthBastard" method="start_moving_down"]
+[connection signal="button_up" from="ButtonDown" to="IntInputForStealthBastard" method="stop_moving_down"]
+[connection signal="button_down" from="ButtonLevel1Block" to="ButtonLevel1Block/Node" method="build_and_send_level1_macro"]
+[connection signal="on_integer_block_to_relay" from="ButtonLevel1Block/Node" to="." method="relay_integer_block"]
