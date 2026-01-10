@@ -79,7 +79,7 @@ metadata/_custom_type_script = "uid://cigjimhg30t1d"
 
 [sub_resource type="Resource" id="Resource_88dq0"]
 script = ExtResource("28_uvvr0")
-group = Array[ExtResource("26_pj141")]([SubResource("Resource_3c6gg")])
+group = [SubResource("Resource_3c6gg")]
 metadata/_custom_type_script = "uid://cdxcauos3vijf"
 
 [sub_resource type="Resource" id="Resource_i5jns"]
@@ -92,7 +92,7 @@ metadata/_custom_type_script = "uid://cigjimhg30t1d"
 
 [sub_resource type="Resource" id="Resource_gu3ox"]
 script = ExtResource("28_uvvr0")
-group = Array[ExtResource("26_pj141")]([SubResource("Resource_i5jns")])
+group = [SubResource("Resource_i5jns")]
 metadata/_custom_type_script = "uid://cdxcauos3vijf"
 
 [sub_resource type="Resource" id="Resource_kn0us"]
@@ -113,7 +113,7 @@ metadata/_custom_type_script = "uid://cigjimhg30t1d"
 
 [sub_resource type="Resource" id="Resource_mckog"]
 script = ExtResource("28_uvvr0")
-group = Array[ExtResource("26_pj141")]([SubResource("Resource_kn0us"), SubResource("Resource_l5t8w")])
+group = [SubResource("Resource_kn0us"), SubResource("Resource_l5t8w")]
 metadata/_custom_type_script = "uid://cdxcauos3vijf"
 
 [sub_resource type="Resource" id="Resource_uf7ue"]
@@ -134,7 +134,7 @@ metadata/_custom_type_script = "uid://cigjimhg30t1d"
 
 [sub_resource type="Resource" id="Resource_fnmmj"]
 script = ExtResource("28_uvvr0")
-group = Array[ExtResource("26_pj141")]([SubResource("Resource_uf7ue"), SubResource("Resource_1l0y0")])
+group = [SubResource("Resource_uf7ue"), SubResource("Resource_1l0y0")]
 metadata/_custom_type_script = "uid://cdxcauos3vijf"
 
 [sub_resource type="Resource" id="Resource_s10b7"]
@@ -155,7 +155,7 @@ metadata/_custom_type_script = "uid://cigjimhg30t1d"
 
 [sub_resource type="Resource" id="Resource_ttx7l"]
 script = ExtResource("28_uvvr0")
-group = Array[ExtResource("26_pj141")]([SubResource("Resource_s10b7"), SubResource("Resource_hvc57")])
+group = [SubResource("Resource_s10b7"), SubResource("Resource_hvc57")]
 metadata/_custom_type_script = "uid://cdxcauos3vijf"
 
 [sub_resource type="Resource" id="Resource_likjw"]
@@ -176,7 +176,7 @@ metadata/_custom_type_script = "uid://cigjimhg30t1d"
 
 [sub_resource type="Resource" id="Resource_4m6ie"]
 script = ExtResource("28_uvvr0")
-group = Array[ExtResource("26_pj141")]([SubResource("Resource_likjw"), SubResource("Resource_u5o3a")])
+group = [SubResource("Resource_likjw"), SubResource("Resource_u5o3a")]
 metadata/_custom_type_script = "uid://cdxcauos3vijf"
 
 [sub_resource type="Resource" id="Resource_8ebhs"]
@@ -827,17 +827,11 @@ text = "Flashlight"
 [connection signal="on_integer_block_relayed" from="PlayWithStealthBastard" to="Node3D/IntegerBlockToBytesArray" method="push_iid_block_as_bytes"]
 [connection signal="on_integer_relayed" from="PlayWithStealthBastard" to="Node3D/IntegerToBytes" method="push_integer_value"]
 [connection signal="on_integer_relayed_with_milliseconds_delay" from="PlayWithStealthBastard" to="Node3D/IntegerToBytes" method="push_with_local_delay_integer_value_in_milliseconds"]
-[connection signal="on_integer_index_value_relayed" from="ControlMediaPlayer/UI2DBroadcastControlButtons2" to="Node3D/IntegerToBytes" method="push_player_index_and_value"]
-[connection signal="on_integer_value_relayed" from="ControlMediaPlayer/UI2DBroadcastControlButtons2" to="Node3D/IntegerToBytes" method="push_integer_value"]
 [connection signal="on_integer_generated" from="ControlPiano" to="Node3D/IntegerToBytes" method="push_integer_value"]
 [connection signal="button_down" from="ControlPiano/Button" to="ControlPiano" method="press_random_note_for_a_seconds"]
 [connection signal="on_integer_input" from="Node3D/InputToInteger" to="Node3D/IntegerToBytes" method="push_integer_value"]
 [connection signal="on_bytes_to_push" from="Node3D/IntegerToBytes" to="Node3D/IntegerToBytes/WowBytesToSingleUdp" method="push_bytes"]
 [connection signal="on_block_to_relay_as_bytes_package" from="Node3D/IntegerBlockToBytesArray" to="Node3D/IntegerToBytes/WowBytesToSingleUdp" method="push_bytes"]
-[connection signal="on_integer_index_value_relayed" from="Control/UIOverwatchChildIntegerRelay" to="Node3D/IntegerToBytes" method="push_player_index_and_value"]
-[connection signal="on_integer_value_relayed" from="Control/UIOverwatchChildIntegerRelay" to="Node3D/IntegerToBytes" method="push_integer_value"]
-[connection signal="on_integer_index_value_relayed" from="Control/UI2DBroadcastControlButtons" to="Node3D/IntegerToBytes" method="push_player_index_and_value"]
-[connection signal="on_integer_value_relayed" from="Control/UI2DBroadcastControlButtons" to="Node3D/IntegerToBytes" method="push_integer_value"]
 [connection signal="value_changed" from="Control/VSliderTriggerLeft" to="Control/VSliderTriggerLeft/IIDFloatRangeInOut5" method="set_current_value"]
 [connection signal="value_changed" from="Control/VSliderTriggerRight" to="Control/VSliderTriggerRight/IIDFloatRangeInOut6" method="set_current_value"]
 [connection signal="value_changed" from="Control/VSliderJoystickLeftVertical" to="Control/VSliderJoystickLeftVertical/IIDFloatRangeInOut5" method="set_current_value"]
