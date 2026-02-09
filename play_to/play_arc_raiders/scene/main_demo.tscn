@@ -47,7 +47,9 @@
 [ext_resource type="Script" uid="uid://35nlxljs8v13" path="res://addons/2026_01_02_gdp_playto/play_to/play_arc_raiders/script/int_input_for_arc_raider.gd" id="44_rov7r"]
 [ext_resource type="PackedScene" uid="uid://5ti12uuabh83" path="res://addons/2026_01_02_gdp_playto/play_to/play_10_seconds_ninja/scene/main/play_with_10_seconds_ninja.tscn" id="45_1656y"]
 [ext_resource type="Script" uid="uid://deadmyvy4w5fq" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/gamepad/s2w_gamepad_with_delayer.gd" id="48_l1cft"]
+[ext_resource type="Script" uid="uid://dyfg66bk2vk0i" path="res://addons/2026_01_03_gdp_debug_input_stroke/script/listen_to_devices_axis_and_buttons.gd" id="49_vx48u"]
 [ext_resource type="PackedScene" uid="uid://cprip5k3nlody" path="res://addons/2025_12_04_gdp_s2w_int_utility/scene/elements/s2w_keyboard_pusher.tscn" id="50_37nm6"]
+[ext_resource type="Script" uid="uid://dmyxgi5a4b6wj" path="res://addons/2026_01_03_gdp_debug_input_stroke/script/listen_to_devices_axis_and_buttons_text_debugger.gd" id="50_pv65p"]
 
 [sub_resource type="Resource" id="Resource_wvbgc"]
 metadata/__load_path__ = "res://addons/2025_12_03_gdp_interactable_index_integer/resource/media_control/media_179_play.tres"
@@ -827,6 +829,63 @@ text = "Flashlight"
 script = ExtResource("48_l1cft")
 metadata/_custom_type_script = "uid://deadmyvy4w5fq"
 
+[node name="ListenToDevicesAxisAndButtons" type="Node" parent="." unique_id=103585686]
+script = ExtResource("49_vx48u")
+use_print_debug = false
+metadata/_custom_type_script = "uid://dyfg66bk2vk0i"
+
+[node name="ListenToDevicesAxisAndButtonsTextDebugger" type="Node" parent="ListenToDevicesAxisAndButtons" unique_id=1406720172 node_paths=PackedStringArray("listen_to_axis_and_buttons")]
+script = ExtResource("50_pv65p")
+listen_to_axis_and_buttons = NodePath("..")
+metadata/_custom_type_script = "uid://dmyxgi5a4b6wj"
+
+[node name="Panel" type="Panel" parent="ListenToDevicesAxisAndButtons" unique_id=1949899402]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -3.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListenToDevicesAxisAndButtons/Panel" unique_id=1202565950]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -2.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label Name" type="Label" parent="ListenToDevicesAxisAndButtons/Panel/VBoxContainer" unique_id=896712603]
+layout_mode = 2
+text = "- "
+
+[node name="Label Last Device Used" type="Label" parent="ListenToDevicesAxisAndButtons/Panel/VBoxContainer" unique_id=1406469120]
+layout_mode = 2
+text = "- "
+
+[node name="Label Last Button Device Used" type="Label" parent="ListenToDevicesAxisAndButtons/Panel/VBoxContainer" unique_id=1777302045]
+layout_mode = 2
+text = "- "
+
+[node name="Label Axis Changed" type="Label" parent="ListenToDevicesAxisAndButtons/Panel/VBoxContainer" unique_id=580063784]
+layout_mode = 2
+text = "- "
+
+[node name="Label Button Changed" type="Label" parent="ListenToDevicesAxisAndButtons/Panel/VBoxContainer" unique_id=1289468868]
+layout_mode = 2
+text = "- "
+
+[node name="Label Axis Value Changed" type="Label" parent="ListenToDevicesAxisAndButtons/Panel/VBoxContainer" unique_id=1376164675]
+layout_mode = 2
+text = "- "
+
+[node name="Label Button Value Changed" type="Label" parent="ListenToDevicesAxisAndButtons/Panel/VBoxContainer" unique_id=418636223]
+layout_mode = 2
+text = "- "
+
 [connection signal="on_integer_block_relayed" from="PlayWith10SecondsNinja" to="Node3D/IntegerBlockToBytesArray" method="push_iid_block_as_bytes"]
 [connection signal="on_integer_relayed" from="PlayWith10SecondsNinja" to="Node3D/IntegerToBytes" method="push_integer_value"]
 [connection signal="on_integer_relayed_with_milliseconds_delay" from="PlayWith10SecondsNinja" to="Node3D/IntegerToBytes" method="push_with_local_delay_integer_value_in_milliseconds"]
@@ -856,3 +915,10 @@ metadata/_custom_type_script = "uid://deadmyvy4w5fq"
 [connection signal="button_down" from="PlayWithArcRaiderChampion/ButtonFlashlight" to="PlayWithArcRaiderChampion/IntInputForArcRaider" method="stroke_flashlight"]
 [connection signal="on_integer_action" from="S2WGamepadWithDelayer" to="Node3D/IntegerToBytes" method="push_integer_value"]
 [connection signal="on_integer_action_to_delay_in_milliseconds" from="S2WGamepadWithDelayer" to="Node3D/IntegerToBytes" method="push_with_local_delay_integer_value_in_milliseconds"]
+[connection signal="on_last_device_axis_debug_to_changed" from="ListenToDevicesAxisAndButtons/ListenToDevicesAxisAndButtonsTextDebugger" to="ListenToDevicesAxisAndButtons/Panel/VBoxContainer/Label Axis Value Changed" method="set_text"]
+[connection signal="on_last_device_axis_id_to_changed" from="ListenToDevicesAxisAndButtons/ListenToDevicesAxisAndButtonsTextDebugger" to="ListenToDevicesAxisAndButtons/Panel/VBoxContainer/Label Axis Changed" method="set_text"]
+[connection signal="on_last_device_button_debug_to_changed" from="ListenToDevicesAxisAndButtons/ListenToDevicesAxisAndButtonsTextDebugger" to="ListenToDevicesAxisAndButtons/Panel/VBoxContainer/Label Button Value Changed" method="set_text"]
+[connection signal="on_last_device_button_id_to_changed" from="ListenToDevicesAxisAndButtons/ListenToDevicesAxisAndButtonsTextDebugger" to="ListenToDevicesAxisAndButtons/Panel/VBoxContainer/Label Button Changed" method="set_text"]
+[connection signal="on_last_device_name_to_changed" from="ListenToDevicesAxisAndButtons/ListenToDevicesAxisAndButtonsTextDebugger" to="ListenToDevicesAxisAndButtons/Panel/VBoxContainer/Label Last Device Used" method="set_text"]
+[connection signal="on_last_device_name_to_have_button_changed" from="ListenToDevicesAxisAndButtons/ListenToDevicesAxisAndButtonsTextDebugger" to="ListenToDevicesAxisAndButtons/Panel/VBoxContainer/Label Last Button Device Used" method="set_text"]
+[connection signal="on_new_device_name_detected" from="ListenToDevicesAxisAndButtons/ListenToDevicesAxisAndButtonsTextDebugger" to="ListenToDevicesAxisAndButtons/Panel/VBoxContainer/Label Name" method="set_text"]
