@@ -1,4 +1,4 @@
-class_name IntInputForStealthBastard extends IntInputFor
+class_name IntInputForStealthBastard extends IntInputForKeyboard
 
 @export_group("Stealth Bastard Controls")
 @export var move_left = S2W_Enum_Keyboard.EnumIntegerKeyboard.Left

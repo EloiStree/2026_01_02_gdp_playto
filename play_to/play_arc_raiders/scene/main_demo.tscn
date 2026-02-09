@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=3 uid="uid://cf5wjxwqayt62"]
+[gd_scene format=3 uid="uid://cf5wjxwqayt62"]
 
 [ext_resource type="Script" uid="uid://d3x3shqg2b24i" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/midi/s2w_node_midi.gd" id="1_2moes"]
 [ext_resource type="Script" uid="uid://xymoyasai31d" path="res://addons/2026_01_02_gdp_playto/play_to/play_hollow_knight_silksong/script/check_input_silksong.gd" id="2_hov8q"]
@@ -7,45 +7,46 @@
 [ext_resource type="Script" uid="uid://ckk2rwguxlltg" path="res://addons/2025_11_11_gdp_wow_int/script/wow_int_to_bytes_pusher.gd" id="4_vgxoc"]
 [ext_resource type="Script" uid="uid://dsbgxaqlnktfo" path="res://addons/2025_11_11_gdp_wow_int/script/wow_delay_bytes_queue.gd" id="5_ipjom"]
 [ext_resource type="Script" uid="uid://b66ckvmykthk4" path="res://addons/2025_11_11_gdp_wow_int/script/wow_bytes_to_single_udp.gd" id="6_mn2m8"]
-[ext_resource type="Script" uid="uid://ccegsfrr8scfx" path="res://addons/2026_01_03_gdp_debug_input_stroke/script/control/ui_overwatch_child_Integer_relay.gd" id="7_awofk"]
-[ext_resource type="Script" uid="uid://b6ukl4cmi00al" path="res://addons/2026_01_03_gdp_debug_input_stroke/script/control/ui2d_glue_with_buttons_signal_iid_link.gd" id="8_wymyd"]
-[ext_resource type="Script" uid="uid://ok57wltyb8vh" path="res://addons/2026_01_03_gdp_debug_input_stroke/script/control/ui2d_broadcast_iid_control_buttons__on_off.gd" id="9_aa38j"]
-[ext_resource type="Script" uid="uid://grifmcy8njoe" path="res://addons/2026_01_03_gdp_debug_input_stroke/script/iid_link_value_on_off.gd.gd" id="10_37nm6"]
+[ext_resource type="Script" uid="uid://ccegsfrr8scfx" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/control/ui_overwatch_child_Integer_relay.gd" id="7_awofk"]
+[ext_resource type="Script" uid="uid://b6ukl4cmi00al" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/control/ui2d_glue_with_buttons_signal_iid_link.gd" id="8_wymyd"]
+[ext_resource type="Script" uid="uid://ok57wltyb8vh" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/control/ui2d_broadcast_iid_control_buttons__on_off.gd" id="9_aa38j"]
+[ext_resource type="Script" uid="uid://grifmcy8njoe" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/iid_link_value_on_off.gd.gd" id="10_37nm6"]
 [ext_resource type="Script" uid="uid://b0cdq6gydsiri" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/iid_block_builder/index_integer_date_block_to_bytes_package_node.gd" id="11_joib7"]
-[ext_resource type="Resource" uid="uid://c1u57mhvo344q" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_a.tres" id="11_pom88"]
-[ext_resource type="Resource" uid="uid://c44pk1h86ra0u" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_record.tres" id="12_hi780"]
-[ext_resource type="Resource" uid="uid://cydsgcvs8ko4h" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_b.tres" id="13_5b51x"]
-[ext_resource type="Resource" uid="uid://c55a1mj15fkv3" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_x.tres" id="14_k2f8r"]
-[ext_resource type="Resource" uid="uid://b0r1gkbpwqxh4" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_y.tres" id="15_geba0"]
-[ext_resource type="Resource" uid="uid://d12ghadqcjmv3" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_sbr.tres" id="16_mhpio"]
-[ext_resource type="Resource" uid="uid://rgyq62rdpfyb" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_sbl.tres" id="17_6ul3g"]
-[ext_resource type="Resource" uid="uid://c0o3a7wdk0lps" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_arrow_down.tres" id="18_yi1ld"]
-[ext_resource type="Resource" uid="uid://cvbc75josst6m" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_arrow_right.tres" id="19_6bvpi"]
-[ext_resource type="Resource" uid="uid://jvcv51kg8kfl" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_arrow_left.tres" id="20_4jtq4"]
-[ext_resource type="Resource" uid="uid://dj0h3ghkh5fe7" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_arrow_up.tres" id="21_k64pv"]
-[ext_resource type="Resource" uid="uid://bf1ekjlwuejhi" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_ml.tres" id="22_3t214"]
-[ext_resource type="Resource" uid="uid://cxio0eya8kbmb" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_mr.tres" id="23_tu4oc"]
-[ext_resource type="Resource" uid="uid://bq1gwvnuhp7sn" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_mc.tres" id="24_2mpea"]
-[ext_resource type="Script" uid="uid://bwwn2dbrijb0u" path="res://addons/2026_01_03_gdp_debug_input_stroke/script/iid_float_range_in_out.gd" id="25_psygy"]
-[ext_resource type="Script" uid="uid://cigjimhg30t1d" path="res://addons/2026_01_03_gdp_debug_input_stroke/script/beans/iid_data_in_out_range.gd" id="26_pj141"]
-[ext_resource type="Resource" uid="uid://cjvwblb8cv6fj" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_tl.tres" id="27_kyjhh"]
-[ext_resource type="Script" uid="uid://cdxcauos3vijf" path="res://addons/2026_01_03_gdp_debug_input_stroke/script/beans/iid_data_in_out_group_range.gd" id="28_uvvr0"]
-[ext_resource type="Resource" uid="uid://3m43y3cvmgs4" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_tr.tres" id="29_8jscv"]
-[ext_resource type="Resource" uid="uid://cwf7elx1fbhu6" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_jbl.tres" id="30_0qc1v"]
-[ext_resource type="Resource" uid="uid://clg7o8cayy2e3" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_jbr.tres" id="31_jqmxw"]
-[ext_resource type="Resource" uid="uid://0ft1jmv1xhe6" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_joystick_left_down.tres" id="32_1rbq2"]
-[ext_resource type="Resource" uid="uid://bulgrav1p556o" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_joystick_left_up.tres" id="33_48pg5"]
-[ext_resource type="Resource" uid="uid://dwei7kwni0mkd" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_joystick_left_left.tres" id="34_f6hfb"]
-[ext_resource type="Resource" uid="uid://q34q5eqvp3v3" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_joystick_left_right.tres" id="35_ks6tx"]
-[ext_resource type="Resource" uid="uid://cokes6ki8312y" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_joystick_right_down.tres" id="36_umivo"]
-[ext_resource type="Resource" uid="uid://dk3r5im23vk6m" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_joystick_right_up.tres" id="37_75q53"]
-[ext_resource type="Resource" uid="uid://cacp35vx4aj41" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_joystick_right_left.tres" id="38_us5l6"]
-[ext_resource type="Resource" uid="uid://hh5fxqo8rqrg" path="res://addons/2026_01_03_gdp_debug_input_stroke/resource/joystick_range/gamepad/xbox_joystick_right_right.tres" id="39_oehkm"]
+[ext_resource type="Resource" uid="uid://c1u57mhvo344q" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_a.tres" id="11_pom88"]
+[ext_resource type="Resource" uid="uid://c44pk1h86ra0u" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_record.tres" id="12_hi780"]
+[ext_resource type="Resource" uid="uid://cydsgcvs8ko4h" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_b.tres" id="13_5b51x"]
+[ext_resource type="Resource" uid="uid://c55a1mj15fkv3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_x.tres" id="14_k2f8r"]
+[ext_resource type="Resource" uid="uid://b0r1gkbpwqxh4" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_y.tres" id="15_geba0"]
+[ext_resource type="Resource" uid="uid://d12ghadqcjmv3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_sbr.tres" id="16_mhpio"]
+[ext_resource type="Resource" uid="uid://rgyq62rdpfyb" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_sbl.tres" id="17_6ul3g"]
+[ext_resource type="Resource" uid="uid://c0o3a7wdk0lps" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_arrow_down.tres" id="18_yi1ld"]
+[ext_resource type="Resource" uid="uid://cvbc75josst6m" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_arrow_right.tres" id="19_6bvpi"]
+[ext_resource type="Resource" uid="uid://jvcv51kg8kfl" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_arrow_left.tres" id="20_4jtq4"]
+[ext_resource type="Resource" uid="uid://dj0h3ghkh5fe7" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_arrow_up.tres" id="21_k64pv"]
+[ext_resource type="Resource" uid="uid://bf1ekjlwuejhi" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_ml.tres" id="22_3t214"]
+[ext_resource type="Resource" uid="uid://cxio0eya8kbmb" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_mr.tres" id="23_tu4oc"]
+[ext_resource type="Resource" uid="uid://bq1gwvnuhp7sn" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_mc.tres" id="24_2mpea"]
+[ext_resource type="Script" uid="uid://bwwn2dbrijb0u" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/iid_float_range_in_out.gd" id="25_psygy"]
+[ext_resource type="Script" uid="uid://cigjimhg30t1d" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/beans/iid_data_in_out_range.gd" id="26_pj141"]
+[ext_resource type="Resource" uid="uid://cjvwblb8cv6fj" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_tl.tres" id="27_kyjhh"]
+[ext_resource type="Script" uid="uid://cdxcauos3vijf" path="res://addons/2025_12_03_gdp_interactable_index_integer/script/beans/iid_data_in_out_group_range.gd" id="28_uvvr0"]
+[ext_resource type="Resource" uid="uid://3m43y3cvmgs4" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_tr.tres" id="29_8jscv"]
+[ext_resource type="Resource" uid="uid://cwf7elx1fbhu6" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_jbl.tres" id="30_0qc1v"]
+[ext_resource type="Resource" uid="uid://clg7o8cayy2e3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_jbr.tres" id="31_jqmxw"]
+[ext_resource type="Resource" uid="uid://0ft1jmv1xhe6" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_left_down.tres" id="32_1rbq2"]
+[ext_resource type="Resource" uid="uid://bulgrav1p556o" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_left_up.tres" id="33_48pg5"]
+[ext_resource type="Resource" uid="uid://dwei7kwni0mkd" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_left_left.tres" id="34_f6hfb"]
+[ext_resource type="Resource" uid="uid://q34q5eqvp3v3" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_left_right.tres" id="35_ks6tx"]
+[ext_resource type="Resource" uid="uid://cokes6ki8312y" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_right_down.tres" id="36_umivo"]
+[ext_resource type="Resource" uid="uid://dk3r5im23vk6m" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_right_up.tres" id="37_75q53"]
+[ext_resource type="Resource" uid="uid://cacp35vx4aj41" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_right_left.tres" id="38_us5l6"]
+[ext_resource type="Resource" uid="uid://hh5fxqo8rqrg" path="res://addons/2025_12_03_gdp_interactable_index_integer/resource/joystick_range/gamepad/xbox_joystick_right_right.tres" id="39_oehkm"]
 [ext_resource type="Script" uid="uid://dvk3cj3mmr8m4" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/gamepad/test_transmission1817.gd" id="40_lkhm2"]
 [ext_resource type="Resource" uid="uid://bqannx6y66aq8" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/gamepad/resource/r_gamepad.tres" id="41_3g11o"]
 [ext_resource type="Script" uid="uid://byq2v4404bls7" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/gamepad/s2w_data_gamepad_18_17.gd" id="42_3bx7b"]
 [ext_resource type="Script" uid="uid://35nlxljs8v13" path="res://addons/2026_01_02_gdp_playto/play_to/play_arc_raiders/script/int_input_for_arc_raider.gd" id="44_rov7r"]
 [ext_resource type="PackedScene" uid="uid://5ti12uuabh83" path="res://addons/2026_01_02_gdp_playto/play_to/play_10_seconds_ninja/scene/main/play_with_10_seconds_ninja.tscn" id="45_1656y"]
+[ext_resource type="Script" uid="uid://deadmyvy4w5fq" path="res://addons/2025_12_04_gdp_s2w_int_utility/script/gamepad/s2w_gamepad_with_delayer.gd" id="48_l1cft"]
 [ext_resource type="PackedScene" uid="uid://cprip5k3nlody" path="res://addons/2025_12_04_gdp_s2w_int_utility/scene/elements/s2w_keyboard_pusher.tscn" id="50_37nm6"]
 
 [sub_resource type="Resource" id="Resource_wvbgc"]
@@ -79,7 +80,7 @@ metadata/_custom_type_script = "uid://cigjimhg30t1d"
 
 [sub_resource type="Resource" id="Resource_88dq0"]
 script = ExtResource("28_uvvr0")
-group = [SubResource("Resource_3c6gg")]
+group = Array[ExtResource("26_pj141")]([SubResource("Resource_3c6gg")])
 metadata/_custom_type_script = "uid://cdxcauos3vijf"
 
 [sub_resource type="Resource" id="Resource_i5jns"]
@@ -92,7 +93,7 @@ metadata/_custom_type_script = "uid://cigjimhg30t1d"
 
 [sub_resource type="Resource" id="Resource_gu3ox"]
 script = ExtResource("28_uvvr0")
-group = [SubResource("Resource_i5jns")]
+group = Array[ExtResource("26_pj141")]([SubResource("Resource_i5jns")])
 metadata/_custom_type_script = "uid://cdxcauos3vijf"
 
 [sub_resource type="Resource" id="Resource_kn0us"]
@@ -113,7 +114,7 @@ metadata/_custom_type_script = "uid://cigjimhg30t1d"
 
 [sub_resource type="Resource" id="Resource_mckog"]
 script = ExtResource("28_uvvr0")
-group = [SubResource("Resource_kn0us"), SubResource("Resource_l5t8w")]
+group = Array[ExtResource("26_pj141")]([SubResource("Resource_kn0us"), SubResource("Resource_l5t8w")])
 metadata/_custom_type_script = "uid://cdxcauos3vijf"
 
 [sub_resource type="Resource" id="Resource_uf7ue"]
@@ -134,7 +135,7 @@ metadata/_custom_type_script = "uid://cigjimhg30t1d"
 
 [sub_resource type="Resource" id="Resource_fnmmj"]
 script = ExtResource("28_uvvr0")
-group = [SubResource("Resource_uf7ue"), SubResource("Resource_1l0y0")]
+group = Array[ExtResource("26_pj141")]([SubResource("Resource_uf7ue"), SubResource("Resource_1l0y0")])
 metadata/_custom_type_script = "uid://cdxcauos3vijf"
 
 [sub_resource type="Resource" id="Resource_s10b7"]
@@ -155,7 +156,7 @@ metadata/_custom_type_script = "uid://cigjimhg30t1d"
 
 [sub_resource type="Resource" id="Resource_ttx7l"]
 script = ExtResource("28_uvvr0")
-group = [SubResource("Resource_s10b7"), SubResource("Resource_hvc57")]
+group = Array[ExtResource("26_pj141")]([SubResource("Resource_s10b7"), SubResource("Resource_hvc57")])
 metadata/_custom_type_script = "uid://cdxcauos3vijf"
 
 [sub_resource type="Resource" id="Resource_likjw"]
@@ -176,7 +177,7 @@ metadata/_custom_type_script = "uid://cigjimhg30t1d"
 
 [sub_resource type="Resource" id="Resource_4m6ie"]
 script = ExtResource("28_uvvr0")
-group = [SubResource("Resource_likjw"), SubResource("Resource_u5o3a")]
+group = Array[ExtResource("26_pj141")]([SubResource("Resource_likjw"), SubResource("Resource_u5o3a")])
 metadata/_custom_type_script = "uid://cdxcauos3vijf"
 
 [sub_resource type="Resource" id="Resource_8ebhs"]
@@ -188,9 +189,9 @@ button_x_left = true
 joystick_left_vertical_axis_n1_p1_percent = 5.0
 metadata/_custom_type_script = "uid://byq2v4404bls7"
 
-[node name="MainDemo" type="Node3D"]
+[node name="MainDemo" type="Node3D" unique_id=1453995234]
 
-[node name="PlayWith10SecondsNinja" parent="." instance=ExtResource("45_1656y")]
+[node name="PlayWith10SecondsNinja" parent="." unique_id=1332436318 instance=ExtResource("45_1656y")]
 visible = false
 anchor_top = 0.651
 anchor_right = 1.0
@@ -199,26 +200,26 @@ offset_top = -7.3120117
 offset_right = 3.0
 offset_bottom = 0.2159729
 
-[node name="PlayWithStealthBastard" parent="." instance=ExtResource("2_hxo3q")]
+[node name="PlayWithStealthBastard" parent="." unique_id=973903686 instance=ExtResource("2_hxo3q")]
 
-[node name="ControlMediaPlayer" type="Control" parent="."]
+[node name="ControlMediaPlayer" type="Control" parent="." unique_id=1432698590]
 layout_mode = 3
 anchor_right = 1.0
 anchor_bottom = 0.078
 offset_right = 2.0
 offset_bottom = 0.063999176
 
-[node name="UI2DGlueWithSignalIIDLink2" type="Node" parent="ControlMediaPlayer" node_paths=PackedStringArray("parent_to_overwatch")]
+[node name="UI2DGlueWithSignalIIDLink2" type="Node" parent="ControlMediaPlayer" unique_id=903170437 node_paths=PackedStringArray("parent_to_overwatch")]
 script = ExtResource("8_wymyd")
 parent_to_overwatch = NodePath("..")
 metadata/_custom_type_script = "uid://b6ukl4cmi00al"
 
-[node name="UI2DBroadcastControlButtons2" type="Node" parent="ControlMediaPlayer" node_paths=PackedStringArray("parent_to_overwatch")]
+[node name="UI2DBroadcastControlButtons2" type="Node" parent="ControlMediaPlayer" unique_id=309674351 node_paths=PackedStringArray("parent_to_overwatch")]
 script = ExtResource("9_aa38j")
 parent_to_overwatch = NodePath("..")
 metadata/_custom_type_script = "uid://ok57wltyb8vh"
 
-[node name="Button" type="Button" parent="ControlMediaPlayer"]
+[node name="Button" type="Button" parent="ControlMediaPlayer" unique_id=1584139078]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.128
@@ -227,12 +228,12 @@ offset_right = 0.20800018
 offset_bottom = -3.0
 text = "Play"
 
-[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button"]
+[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button" unique_id=1865880793]
 script = ExtResource("10_37nm6")
 integer_value = SubResource("Resource_wvbgc")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="Button2" type="Button" parent="ControlMediaPlayer"]
+[node name="Button2" type="Button" parent="ControlMediaPlayer" unique_id=50902823]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.148
@@ -242,12 +243,12 @@ offset_left = -8.071999
 offset_right = 4.6600037
 text = "Stop"
 
-[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button2"]
+[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button2" unique_id=1703005065]
 script = ExtResource("10_37nm6")
 integer_value = SubResource("Resource_rov7r")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="Button3" type="Button" parent="ControlMediaPlayer"]
+[node name="Button3" type="Button" parent="ControlMediaPlayer" unique_id=853390962]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.128
@@ -257,12 +258,12 @@ offset_right = 182.20801
 offset_bottom = -3.0
 text = "Previous"
 
-[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button3"]
+[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button3" unique_id=578533644]
 script = ExtResource("10_37nm6")
 integer_value = SubResource("Resource_1656y")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="Button4" type="Button" parent="ControlMediaPlayer"]
+[node name="Button4" type="Button" parent="ControlMediaPlayer" unique_id=1725602772]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.148
@@ -274,12 +275,12 @@ offset_right = 186.66
 offset_bottom = -1.0000038
 text = "Next"
 
-[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button4"]
+[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button4" unique_id=488164997]
 script = ExtResource("10_37nm6")
 integer_value = SubResource("Resource_joib7")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="Button5" type="Button" parent="ControlMediaPlayer"]
+[node name="Button5" type="Button" parent="ControlMediaPlayer" unique_id=2099164877]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.128
@@ -290,12 +291,12 @@ offset_right = 368.208
 offset_bottom = -1.0
 text = "-"
 
-[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button5"]
+[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button5" unique_id=2131441093]
 script = ExtResource("10_37nm6")
 integer_value = SubResource("Resource_hxo3q")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="Button6" type="Button" parent="ControlMediaPlayer"]
+[node name="Button6" type="Button" parent="ControlMediaPlayer" unique_id=445427533]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.148
@@ -307,12 +308,12 @@ offset_right = 372.66
 offset_bottom = 0.9999962
 text = "+"
 
-[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button6"]
+[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button6" unique_id=1784488610]
 script = ExtResource("10_37nm6")
 integer_value = SubResource("Resource_l1cft")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="Button7" type="Button" parent="ControlMediaPlayer"]
+[node name="Button7" type="Button" parent="ControlMediaPlayer" unique_id=526475556]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.148
@@ -324,12 +325,12 @@ offset_right = 474.66
 offset_bottom = 3.9999962
 text = "Mute"
 
-[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button7"]
+[node name="IIDLinkIndexValue" type="Node" parent="ControlMediaPlayer/Button7" unique_id=857697240]
 script = ExtResource("10_37nm6")
 integer_value = SubResource("Resource_vx48u")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="ControlPiano" type="Control" parent="."]
+[node name="ControlPiano" type="Control" parent="." unique_id=1303169481]
 layout_mode = 3
 anchor_left = 0.615
 anchor_top = 0.54
@@ -341,7 +342,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_2moes")
 
-[node name="Button" type="Button" parent="ControlPiano"]
+[node name="Button" type="Button" parent="ControlPiano" unique_id=1753536620]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -350,10 +351,10 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "MIDI"
 
-[node name="Node3D" type="Node3D" parent="."]
+[node name="Node3D" type="Node3D" parent="." unique_id=1200329290]
 script = ExtResource("2_hov8q")
 
-[node name="InputToInteger" type="Node" parent="Node3D"]
+[node name="InputToInteger" type="Node" parent="Node3D" unique_id=251690877]
 script = ExtResource("3_rcwcq")
 input_to_integer_press_release = "Space|1024|2024
 Escape|1027|2027
@@ -368,44 +369,45 @@ Right|1039|2039
 Down|1040|2040
 "
 
-[node name="IntegerToBytes" type="Node" parent="Node3D" node_paths=PackedStringArray("bytes_delayer")]
+[node name="IntegerToBytes" type="Node" parent="Node3D" unique_id=759865245 node_paths=PackedStringArray("bytes_delayer")]
 script = ExtResource("4_vgxoc")
 bytes_delayer = NodePath("WowDelayBytesQueue")
 
-[node name="WowDelayBytesQueue" type="Node" parent="Node3D/IntegerToBytes"]
+[node name="WowDelayBytesQueue" type="Node" parent="Node3D/IntegerToBytes" unique_id=2066581533]
 script = ExtResource("5_ipjom")
 metadata/_custom_type_script = "uid://dsbgxaqlnktfo"
 
-[node name="WowBytesToSingleUdp" type="Node" parent="Node3D/IntegerToBytes"]
+[node name="WowBytesToSingleUdp" type="Node" parent="Node3D/IntegerToBytes" unique_id=1613087104]
 script = ExtResource("6_mn2m8")
-target_ip = "192.168.178.111"
+target_ip = "192.168.178.95"
+target_port = 7073
 metadata/_custom_type_script = "uid://b66ckvmykthk4"
 
-[node name="IntegerBlockToBytesArray" type="Node" parent="Node3D"]
+[node name="IntegerBlockToBytesArray" type="Node" parent="Node3D" unique_id=16107366]
 script = ExtResource("11_joib7")
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Control" parent="." unique_id=235073029]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="UIOverwatchChildIntegerRelay" type="Node" parent="Control" node_paths=PackedStringArray("parent_to_overwatch")]
+[node name="UIOverwatchChildIntegerRelay" type="Node" parent="Control" unique_id=1897973862 node_paths=PackedStringArray("parent_to_overwatch")]
 script = ExtResource("7_awofk")
 parent_to_overwatch = NodePath("..")
 metadata/_custom_type_script = "uid://ccegsfrr8scfx"
 
-[node name="UI2DGlueWithSignalIIDLink" type="Node" parent="Control" node_paths=PackedStringArray("parent_to_overwatch")]
+[node name="UI2DGlueWithSignalIIDLink" type="Node" parent="Control" unique_id=258053590 node_paths=PackedStringArray("parent_to_overwatch")]
 script = ExtResource("8_wymyd")
 parent_to_overwatch = NodePath("..")
 metadata/_custom_type_script = "uid://b6ukl4cmi00al"
 
-[node name="UI2DBroadcastControlButtons" type="Node" parent="Control" node_paths=PackedStringArray("parent_to_overwatch")]
+[node name="UI2DBroadcastControlButtons" type="Node" parent="Control" unique_id=1932049772 node_paths=PackedStringArray("parent_to_overwatch")]
 script = ExtResource("9_aa38j")
 parent_to_overwatch = NodePath("..")
 metadata/_custom_type_script = "uid://ok57wltyb8vh"
 
-[node name="ButtonDownA" type="Button" parent="Control"]
+[node name="ButtonDownA" type="Button" parent="Control" unique_id=726904884]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 12.275
@@ -416,12 +418,12 @@ offset_left = -3.05176e-05
 offset_right = 0.0171509
 text = "A"
 
-[node name="IIDLinkIndexValueOnOff" type="Node" parent="Control/ButtonDownA"]
+[node name="IIDLinkIndexValueOnOff" type="Node" parent="Control/ButtonDownA" unique_id=225370059]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("11_pom88")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="ButtonRecord" type="Button" parent="Control"]
+[node name="ButtonRecord" type="Button" parent="Control" unique_id=249268198]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 13.225
@@ -433,12 +435,12 @@ offset_right = 0.0171509
 offset_bottom = -3.05176e-05
 text = "R"
 
-[node name="IIDLinkIndexValueOnOff" type="Node" parent="Control/ButtonRecord"]
+[node name="IIDLinkIndexValueOnOff" type="Node" parent="Control/ButtonRecord" unique_id=1169665847]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("12_hi780")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="ButtonRghtB" type="Button" parent="Control"]
+[node name="ButtonRghtB" type="Button" parent="Control" unique_id=1158522616]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 13.15
@@ -449,12 +451,12 @@ offset_right = 0.0171509
 offset_bottom = -1.52588e-05
 text = "B"
 
-[node name="IIDLinkIndexValueOnOff" type="Node" parent="Control/ButtonRghtB"]
+[node name="IIDLinkIndexValueOnOff" type="Node" parent="Control/ButtonRghtB" unique_id=573435664]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("13_5b51x")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="ButtonLeftX" type="Button" parent="Control"]
+[node name="ButtonLeftX" type="Button" parent="Control" unique_id=264909990]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 11.425
@@ -464,12 +466,12 @@ anchor_bottom = 4.175
 offset_right = 0.0171509
 text = "X"
 
-[node name="IIDLinkIndexValueOnOff2" type="Node" parent="Control/ButtonLeftX"]
+[node name="IIDLinkIndexValueOnOff2" type="Node" parent="Control/ButtonLeftX" unique_id=1883193880]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("14_k2f8r")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="ButtonUpY" type="Button" parent="Control"]
+[node name="ButtonUpY" type="Button" parent="Control" unique_id=1354948044]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 12.35
@@ -479,12 +481,12 @@ anchor_bottom = 3.225
 offset_right = 0.0171509
 text = "Y"
 
-[node name="IIDLinkIndexValueOnOff3" type="Node" parent="Control/ButtonUpY"]
+[node name="IIDLinkIndexValueOnOff3" type="Node" parent="Control/ButtonUpY" unique_id=396394242]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("15_geba0")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="ButtonSideButtonRight" type="Button" parent="Control"]
+[node name="ButtonSideButtonRight" type="Button" parent="Control" unique_id=1002147624]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 12.35
@@ -494,12 +496,12 @@ anchor_bottom = 1.775
 offset_right = 0.0171509
 text = "SBR"
 
-[node name="IIDLinkIndexValueOnOff4" type="Node" parent="Control/ButtonSideButtonRight"]
+[node name="IIDLinkIndexValueOnOff4" type="Node" parent="Control/ButtonSideButtonRight" unique_id=1680591413]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("16_mhpio")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="ButtonSideButtonLeft" type="Button" parent="Control"]
+[node name="ButtonSideButtonLeft" type="Button" parent="Control" unique_id=1896095055]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 3.55
@@ -509,12 +511,12 @@ anchor_bottom = 2.025
 offset_right = 0.0171814
 text = "SBL"
 
-[node name="IIDLinkIndexValueOnOff5" type="Node" parent="Control/ButtonSideButtonLeft"]
+[node name="IIDLinkIndexValueOnOff5" type="Node" parent="Control/ButtonSideButtonLeft" unique_id=1262362106]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("17_6ul3g")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="ButtonArrowDown" type="Button" parent="Control"]
+[node name="ButtonArrowDown" type="Button" parent="Control" unique_id=252714406]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 3.975
@@ -525,12 +527,12 @@ offset_right = -1.52588e-05
 offset_bottom = -3.05176e-05
 text = "DOWN"
 
-[node name="IIDLinkIndexValueOnOff6" type="Node" parent="Control/ButtonArrowDown"]
+[node name="IIDLinkIndexValueOnOff6" type="Node" parent="Control/ButtonArrowDown" unique_id=554679945]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("18_yi1ld")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="ButtonArrowRight" type="Button" parent="Control"]
+[node name="ButtonArrowRight" type="Button" parent="Control" unique_id=2047037577]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 5.125
@@ -543,12 +545,12 @@ offset_right = -16.1428
 offset_bottom = -3.05176e-05
 text = "RIGHT"
 
-[node name="IIDLinkIndexValueOnOff7" type="Node" parent="Control/ButtonArrowRight"]
+[node name="IIDLinkIndexValueOnOff7" type="Node" parent="Control/ButtonArrowRight" unique_id=1565898991]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("19_6bvpi")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="ButtonArrowLeft" type="Button" parent="Control"]
+[node name="ButtonArrowLeft" type="Button" parent="Control" unique_id=651607052]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 3.4
@@ -559,12 +561,12 @@ offset_top = -1.52588e-05
 offset_right = -4.14282
 text = "LEFT"
 
-[node name="IIDLinkIndexValueOnOff8" type="Node" parent="Control/ButtonArrowLeft"]
+[node name="IIDLinkIndexValueOnOff8" type="Node" parent="Control/ButtonArrowLeft" unique_id=1162976928]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("20_4jtq4")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="ButtonArrowUp" type="Button" parent="Control"]
+[node name="ButtonArrowUp" type="Button" parent="Control" unique_id=1539343613]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 4.325
@@ -575,12 +577,12 @@ offset_left = -1.52588e-05
 offset_right = 0.0171814
 text = "UP"
 
-[node name="IIDLinkIndexValueOnOff9" type="Node" parent="Control/ButtonArrowUp"]
+[node name="IIDLinkIndexValueOnOff9" type="Node" parent="Control/ButtonArrowUp" unique_id=2126005296]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("21_k64pv")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="CheckButtonMenuLeft2" type="CheckButton" parent="Control"]
+[node name="CheckButtonMenuLeft2" type="CheckButton" parent="Control" unique_id=490967797]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 6.275
@@ -590,12 +592,12 @@ anchor_bottom = 3.975
 offset_right = -28.0
 text = "ML"
 
-[node name="IIDLinkIndexValueOnOff10" type="Node" parent="Control/CheckButtonMenuLeft2"]
+[node name="IIDLinkIndexValueOnOff10" type="Node" parent="Control/CheckButtonMenuLeft2" unique_id=27121679]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("22_3t214")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="CheckButtonMenuRight" type="CheckButton" parent="Control"]
+[node name="CheckButtonMenuRight" type="CheckButton" parent="Control" unique_id=241285365]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 8.6
@@ -605,12 +607,12 @@ anchor_bottom = 3.925
 offset_right = -1.0
 text = "MR"
 
-[node name="IIDLinkIndexValueOnOff11" type="Node" parent="Control/CheckButtonMenuRight"]
+[node name="IIDLinkIndexValueOnOff11" type="Node" parent="Control/CheckButtonMenuRight" unique_id=2139509375]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("23_tu4oc")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="CheckButtonMenuCenter" type="CheckButton" parent="Control"]
+[node name="CheckButtonMenuCenter" type="CheckButton" parent="Control" unique_id=407060068]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 7.475
@@ -621,12 +623,12 @@ offset_right = -1.0
 offset_bottom = -1.52588e-05
 text = "MC"
 
-[node name="IIDLinkIndexValueOnOff12" type="Node" parent="Control/CheckButtonMenuCenter"]
+[node name="IIDLinkIndexValueOnOff12" type="Node" parent="Control/CheckButtonMenuCenter" unique_id=996581983]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("24_2mpea")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="VSliderTriggerLeft" type="VSlider" parent="Control"]
+[node name="VSliderTriggerLeft" type="VSlider" parent="Control" unique_id=79878811]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 1.15
@@ -636,12 +638,12 @@ anchor_bottom = 4.9
 max_value = 1.0
 step = 0.1
 
-[node name="IIDFloatRangeInOut5" type="Node" parent="Control/VSliderTriggerLeft"]
+[node name="IIDFloatRangeInOut5" type="Node" parent="Control/VSliderTriggerLeft" unique_id=1847321931]
 script = ExtResource("25_psygy")
 in_out_range = SubResource("Resource_88dq0")
 metadata/_custom_type_script = "uid://bwwn2dbrijb0u"
 
-[node name="VSliderTriggerRight" type="VSlider" parent="Control"]
+[node name="VSliderTriggerRight" type="VSlider" parent="Control" unique_id=1340585675]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 15.4
@@ -652,12 +654,12 @@ offset_bottom = -1.52588e-05
 max_value = 1.0
 step = 0.1
 
-[node name="IIDFloatRangeInOut6" type="Node" parent="Control/VSliderTriggerRight"]
+[node name="IIDFloatRangeInOut6" type="Node" parent="Control/VSliderTriggerRight" unique_id=347034933]
 script = ExtResource("25_psygy")
 in_out_range = SubResource("Resource_gu3ox")
 metadata/_custom_type_script = "uid://bwwn2dbrijb0u"
 
-[node name="CheckBoxJoystickLeft" type="CheckBox" parent="Control"]
+[node name="CheckBoxJoystickLeft" type="CheckBox" parent="Control" unique_id=812403018]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 3.625
@@ -667,12 +669,12 @@ anchor_bottom = 4.0
 offset_left = -1.52588e-05
 text = "JLB"
 
-[node name="IIDLinkIndexValueOnOff13" type="Node" parent="Control/CheckBoxJoystickLeft"]
+[node name="IIDLinkIndexValueOnOff13" type="Node" parent="Control/CheckBoxJoystickLeft" unique_id=222856058]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("30_0qc1v")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="CheckBoxJoystickRight" type="CheckBox" parent="Control"]
+[node name="CheckBoxJoystickRight" type="CheckBox" parent="Control" unique_id=705484741]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 9.975
@@ -682,12 +684,12 @@ anchor_bottom = 7.1
 offset_top = -1.52588e-05
 text = "JRB"
 
-[node name="IIDLinkIndexValueOnOff14" type="Node" parent="Control/CheckBoxJoystickRight"]
+[node name="IIDLinkIndexValueOnOff14" type="Node" parent="Control/CheckBoxJoystickRight" unique_id=2146675314]
 script = ExtResource("10_37nm6")
 integer_value = ExtResource("31_jqmxw")
 metadata/_custom_type_script = "uid://crofvpbcssekp"
 
-[node name="VSliderJoystickLeftVertical" type="VSlider" parent="Control"]
+[node name="VSliderJoystickLeftVertical" type="VSlider" parent="Control" unique_id=782319921]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 5.174
@@ -701,12 +703,12 @@ min_value = -1.0
 max_value = 1.0
 step = 0.1
 
-[node name="IIDFloatRangeInOut5" type="Node" parent="Control/VSliderJoystickLeftVertical"]
+[node name="IIDFloatRangeInOut5" type="Node" parent="Control/VSliderJoystickLeftVertical" unique_id=1718960539]
 script = ExtResource("25_psygy")
 in_out_range = SubResource("Resource_mckog")
 metadata/_custom_type_script = "uid://bwwn2dbrijb0u"
 
-[node name="HSliderJoystickLeftHorizontal" type="HSlider" parent="Control"]
+[node name="HSliderJoystickLeftHorizontal" type="HSlider" parent="Control" unique_id=1565603142]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 3.05
@@ -717,12 +719,12 @@ min_value = -1.0
 max_value = 1.0
 step = 0.1
 
-[node name="IIDFloatRangeInOut" type="Node" parent="Control/HSliderJoystickLeftHorizontal"]
+[node name="IIDFloatRangeInOut" type="Node" parent="Control/HSliderJoystickLeftHorizontal" unique_id=724572627]
 script = ExtResource("25_psygy")
 in_out_range = SubResource("Resource_fnmmj")
 metadata/_custom_type_script = "uid://bwwn2dbrijb0u"
 
-[node name="VSliderJoystickRightVertical" type="VSlider" parent="Control"]
+[node name="VSliderJoystickRightVertical" type="VSlider" parent="Control" unique_id=770234714]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 11.65
@@ -735,12 +737,12 @@ min_value = -1.0
 max_value = 1.0
 step = 0.1
 
-[node name="IIDFloatRangeInOut4" type="Node" parent="Control/VSliderJoystickRightVertical"]
+[node name="IIDFloatRangeInOut4" type="Node" parent="Control/VSliderJoystickRightVertical" unique_id=1649238686]
 script = ExtResource("25_psygy")
 in_out_range = SubResource("Resource_ttx7l")
 metadata/_custom_type_script = "uid://bwwn2dbrijb0u"
 
-[node name="HSliderJoystickRightHorizontal" type="HSlider" parent="Control"]
+[node name="HSliderJoystickRightHorizontal" type="HSlider" parent="Control" unique_id=1206735618]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 9.55
@@ -751,24 +753,24 @@ min_value = -1.0
 max_value = 1.0
 step = 0.1
 
-[node name="IIDFloatRangeInOut3" type="Node" parent="Control/HSliderJoystickRightHorizontal"]
+[node name="IIDFloatRangeInOut3" type="Node" parent="Control/HSliderJoystickRightHorizontal" unique_id=1585948830]
 script = ExtResource("25_psygy")
 in_out_range = SubResource("Resource_4m6ie")
 metadata/_custom_type_script = "uid://bwwn2dbrijb0u"
 
-[node name="Node" type="Node" parent="."]
+[node name="Node" type="Node" parent="." unique_id=1820350351]
 script = ExtResource("40_lkhm2")
 to_send = ExtResource("41_3g11o")
 receiver = SubResource("Resource_8ebhs")
 
-[node name="NodeMidi" type="Node" parent="."]
+[node name="NodeMidi" type="Node" parent="." unique_id=1224289149]
 script = ExtResource("1_2moes")
 
-[node name="NodeMedia" type="Node" parent="."]
+[node name="NodeMedia" type="Node" parent="." unique_id=53075438]
 
-[node name="S2wKeyboardPusher" parent="." instance=ExtResource("50_37nm6")]
+[node name="S2wKeyboardPusher" parent="." unique_id=1462436479 instance=ExtResource("50_37nm6")]
 
-[node name="PlayWithArcRaiderChampion" type="Control" parent="."]
+[node name="PlayWithArcRaiderChampion" type="Control" parent="." unique_id=1132883098]
 layout_mode = 3
 anchor_top = 0.804
 anchor_right = 1.0
@@ -778,11 +780,11 @@ offset_top = 2.3519897
 offset_right = -4.0
 offset_bottom = 13.287964
 
-[node name="IntInputForArcRaider" type="Node" parent="PlayWithArcRaiderChampion"]
+[node name="IntInputForArcRaider" type="Node" parent="PlayWithArcRaiderChampion" unique_id=323311498]
 script = ExtResource("44_rov7r")
 metadata/_custom_type_script = "uid://35nlxljs8v13"
 
-[node name="ButtonMap" type="Button" parent="PlayWithArcRaiderChampion"]
+[node name="ButtonMap" type="Button" parent="PlayWithArcRaiderChampion" unique_id=1265433821]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.024
@@ -795,7 +797,7 @@ offset_right = 0.2159996
 offset_bottom = -0.050001144
 text = "Map"
 
-[node name="ButtonInventory" type="Button" parent="PlayWithArcRaiderChampion"]
+[node name="ButtonInventory" type="Button" parent="PlayWithArcRaiderChampion" unique_id=305034760]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.14
@@ -808,7 +810,7 @@ offset_right = -0.103012085
 offset_bottom = 0.0099983215
 text = "Inventory"
 
-[node name="ButtonFlashlight" type="Button" parent="PlayWithArcRaiderChampion"]
+[node name="ButtonFlashlight" type="Button" parent="PlayWithArcRaiderChampion" unique_id=649658104]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.33900002
@@ -821,6 +823,10 @@ offset_right = 1.5
 offset_bottom = 0.0099983215
 text = "Flashlight"
 
+[node name="S2WGamepadWithDelayer" type="Node" parent="." unique_id=984238820]
+script = ExtResource("48_l1cft")
+metadata/_custom_type_script = "uid://deadmyvy4w5fq"
+
 [connection signal="on_integer_block_relayed" from="PlayWith10SecondsNinja" to="Node3D/IntegerBlockToBytesArray" method="push_iid_block_as_bytes"]
 [connection signal="on_integer_relayed" from="PlayWith10SecondsNinja" to="Node3D/IntegerToBytes" method="push_integer_value"]
 [connection signal="on_integer_relayed_with_milliseconds_delay" from="PlayWith10SecondsNinja" to="Node3D/IntegerToBytes" method="push_with_local_delay_integer_value_in_milliseconds"]
@@ -832,6 +838,10 @@ text = "Flashlight"
 [connection signal="on_integer_input" from="Node3D/InputToInteger" to="Node3D/IntegerToBytes" method="push_integer_value"]
 [connection signal="on_bytes_to_push" from="Node3D/IntegerToBytes" to="Node3D/IntegerToBytes/WowBytesToSingleUdp" method="push_bytes"]
 [connection signal="on_block_to_relay_as_bytes_package" from="Node3D/IntegerBlockToBytesArray" to="Node3D/IntegerToBytes/WowBytesToSingleUdp" method="push_bytes"]
+[connection signal="on_integer_index_value_relayed" from="Control/UIOverwatchChildIntegerRelay" to="Node3D/IntegerToBytes" method="push_player_index_and_value"]
+[connection signal="on_integer_value_relayed" from="Control/UIOverwatchChildIntegerRelay" to="Node3D/IntegerToBytes" method="push_integer_value"]
+[connection signal="on_integer_index_value_relayed" from="Control/UI2DBroadcastControlButtons" to="Node3D/IntegerToBytes" method="push_player_index_and_value"]
+[connection signal="on_integer_value_relayed" from="Control/UI2DBroadcastControlButtons" to="Node3D/IntegerToBytes" method="push_integer_value"]
 [connection signal="value_changed" from="Control/VSliderTriggerLeft" to="Control/VSliderTriggerLeft/IIDFloatRangeInOut5" method="set_current_value"]
 [connection signal="value_changed" from="Control/VSliderTriggerRight" to="Control/VSliderTriggerRight/IIDFloatRangeInOut6" method="set_current_value"]
 [connection signal="value_changed" from="Control/VSliderJoystickLeftVertical" to="Control/VSliderJoystickLeftVertical/IIDFloatRangeInOut5" method="set_current_value"]
@@ -844,3 +854,5 @@ text = "Flashlight"
 [connection signal="button_down" from="PlayWithArcRaiderChampion/ButtonMap" to="PlayWithArcRaiderChampion/IntInputForArcRaider" method="stroke_open_map"]
 [connection signal="button_down" from="PlayWithArcRaiderChampion/ButtonInventory" to="PlayWithArcRaiderChampion/IntInputForArcRaider" method="stroke_inventory"]
 [connection signal="button_down" from="PlayWithArcRaiderChampion/ButtonFlashlight" to="PlayWithArcRaiderChampion/IntInputForArcRaider" method="stroke_flashlight"]
+[connection signal="on_integer_action" from="S2WGamepadWithDelayer" to="Node3D/IntegerToBytes" method="push_integer_value"]
+[connection signal="on_integer_action_to_delay_in_milliseconds" from="S2WGamepadWithDelayer" to="Node3D/IntegerToBytes" method="push_with_local_delay_integer_value_in_milliseconds"]

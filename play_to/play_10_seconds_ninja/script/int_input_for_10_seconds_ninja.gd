@@ -1,4 +1,4 @@
-class_name IntInputFor10SecondsNinja extends IntInputFor
+class_name IntInputFor10SecondsNinja extends IntInputForKeyboard
 
 
 @export_group("10 Seconds Ninja Controls")
