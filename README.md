@@ -19,3 +19,6 @@ Here is some GDScript that, through IID S2W, allows you to play games made with 
 
 
 > Note: "Play To" package is dependent of the 2025_12_04_gdp_s2w_int_utility enumarator.
+
+
+Miro Board: https://miro.com/app/board/uXjVLH_rPp4=/?share_link_id=911731096175
